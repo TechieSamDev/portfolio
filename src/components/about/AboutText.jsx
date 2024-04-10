@@ -14,7 +14,7 @@ const AboutText = () => {
           I'm a results-focused web developer dedicated to delivering top-notch solutions. With a keen focus on quality, hiring me ensures you have a motivated professional equipped with the skills to tackle any challenge. I thrive on creative problem-solving and specialize in crafting user-friendly designs. Adaptable and collaborative, I excel in dynamic environments and enjoy working alongside others. Let's connect and collaborate to create exceptional digital experiences!
       </p>
       <a href="#contact" className="btn btnPrimary p-3">
-        Let's Talk
+        Get in Touch
       </a>
     </motion.div>
   );
