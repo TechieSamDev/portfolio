@@ -6,7 +6,6 @@ import { childVariant, containerVariant } from "./HeaderAnimationStyles";
 const items = [
   <h5 style={{ fontSize: 15 }}>Hey, I'm</h5>,
   <h1>Samuel Abolade.</h1>,
-  <h6>Techie Sam</h6>,
   <h6>Software Engineer</h6>,
 ];
 
