@@ -1,36 +1,36 @@
-import TextField from "@mui/material/TextField";
-import { useFormik } from "formik";
-import CircularProgress from "@mui/material/CircularProgress";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import TextField from '@mui/material/TextField';
+import { useFormik } from 'formik';
+import CircularProgress from '@mui/material/CircularProgress';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const TEXT_FIELD_PROPS = [
   {
-    name: "fullName",
-    label: "Full Name",
-    placeholder: "John Doe",
+    name: 'fullName',
+    label: 'Full Name',
+    placeholder: 'John Doe',
     multiline: false,
   },
   {
-    name: "email",
-    label: "Email",
-    placeholder: "johndoe@example",
+    name: 'email',
+    label: 'Email',
+    placeholder: 'johndoe@example',
     multiline: false,
   },
   {
-    name: "message",
-    label: "Message",
-    rows: "4",
+    name: 'message',
+    label: 'Message',
+    rows: '4',
     multiline: true,
-    placeholder: "Message here...",
+    placeholder: 'Message here...',
   },
 ];
 
 const ContactInputs = () => {
   const initialValues = {
-    fullName: "",
-    email: "",
-    message: "",
+    fullName: '',
+    email: '',
+    message: '',
   };
 
   const formik = useFormik({
@@ -39,34 +39,34 @@ const ContactInputs = () => {
       const errors = {};
       // Check first name Validity
       if (!values.fullName.trim()) {
-        errors.fullName = "Full Name is required";
+        errors.fullName = 'Full Name is required';
       } else if (values.fullName.length < 5 || values.fullName.length > 15) {
-        errors.fullName = "Full Name must be 15 characters or less";
+        errors.fullName = 'Full Name must be 15 characters or less';
       }
 
       // Check Email Validity
       if (!values.email.trim()) {
-        errors.email = "Email is Required";
+        errors.email = 'Email is Required';
       } else if (
         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
       ) {
-        errors.email = "Invalid email address";
+        errors.email = 'Invalid email address';
       }
 
       // Check Message Validity
       if (!values.message.trim()) {
-        errors.message = "Message cannot be empty";
+        errors.message = 'Message cannot be empty';
       } else if (values.message.trim().length < 10) {
-        errors.message = "Message should contain at least 10 characters";
+        errors.message = 'Message should contain at least 10 characters';
       }
       return errors;
     },
 
     onSubmit: (values, { setSubmitting, resetForm }) => {
-      fetch("https://techiesamm.vercel.app/api/v1", {
-        method: "POST",
+      fetch('https://techiesamm.vercel.app/api/v1', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(values),
       })
@@ -74,28 +74,28 @@ const ContactInputs = () => {
         .then((res) => {
           setSubmitting(false);
           resetForm();
-          if (res.status === "fail" || res.status === "error")
+          if (res.status === 'fail' || res.status === 'error')
             return toast.error(res.message);
           toast.success(res.message);
         })
         .catch(() => {
           setSubmitting(false);
           resetForm();
-          toast.error("An error occurred while sending message!");
+          toast.error('An error occurred while sending message!');
         });
     },
   });
 
   return (
     <>
-      <form onSubmit={formik.handleSubmit}>
+      <form className="col-lg-3 border" onSubmit={formik.handleSubmit}>
         <ToastContainer />
         {TEXT_FIELD_PROPS.map(
           ({ name, label, rows, placeholder, multiline }) => (
             <TextField
               key={name}
-              style={{ color: "#ffff" }}
-              type={name === "email" ? "email" : "text"}
+              style={{ color: '#ffff' }}
+              type={name === 'email' ? 'email' : 'text'}
               className="d-block mt-4 text-light"
               name={name}
               placeholder={placeholder}
@@ -106,7 +106,7 @@ const ContactInputs = () => {
               //  ========== MUI PROPERTIES ==========
               InputProps={{
                 style: {
-                  color: "#ffff",
+                  color: '#ffff',
                 },
               }}
               error={formik.touched[name] && formik.errors[name] ? true : false}
@@ -132,7 +132,7 @@ const ContactInputs = () => {
           {formik.isSubmitting ? (
             <CircularProgress size={20} color="inherit" />
           ) : (
-            "SEND MESSAGE"
+            'SEND MESSAGE'
           )}
         </button>
       </form>

@@ -4,7 +4,7 @@ import HeadShot from "./HeadShot";
 
 function About() {
   return (
-    <section className="card-container" id="about">
+    <section className="card-container"  id="about">
       <div className="text-center">
         <h6>Get To Know</h6>
         <h5>About me</h5>

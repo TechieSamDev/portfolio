@@ -1,5 +1,5 @@
 :root {
-  --color-bg: #1f1f38;
+  --color-bg: #1c1c40;
   --color-bg-variant: #2c2c6c;
   --slate: #8892b0;
   --light-slate: #ccd6f6;
@@ -18,8 +18,10 @@ section {
   margin-top: 8rem;
   margin: auto;
   padding: 10px;
-  max-width: 100px;
-  width: 1500px;;
+  border: 1px solid red;
+  /* max-width: 100px; */
+  /* max-width: 1500px; */
+
   /* border: 2px solid red; */
 }
 

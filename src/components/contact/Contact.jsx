@@ -1,6 +1,6 @@
-import StyledCard from "../../styles/StyledCard";
-import ContactInputs from "./ContactInputs";
-import ContactDetails from "./ContactDetails";
+import StyledCard from '../../styles/StyledCard';
+import ContactInputs from './ContactInputs';
+import ContactDetails from './ContactDetails';
 
 const Contact = () => {
   return (
@@ -9,11 +9,9 @@ const Contact = () => {
         <h6>Get in Touch</h6>
         <h5>Contact Me</h5>
       </div>
-      <StyledCard className="row gap-5 m-auto">
+      <StyledCard className="row gap-3 m-auto border">
         <ContactDetails />
-        <div className="col col-lg-6 rounded rounded-5">
-          <ContactInputs />
-        </div>
+        <ContactInputs />
       </StyledCard>
     </section>
   );

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-const StyledCard = styled.div`
+import styled from 'styled-components';
+const StyledCard = styled.ul`
 ul{
     margin:0;
     padding:0;
@@ -16,13 +16,14 @@ li{
     }
     @media screen and (max-width: 300px){
         li{
-            min-width:13em;
+            // min-width:13em;
             // max-width:350px;
         }
     }  
     @media screen and (min-width: 500px){
         li{
-            min-width:15em;
+            min-width:19em;
+            width: 20px;
         }
     }  
     li:hover{
@@ -33,4 +34,4 @@ li{
     }
 
 `;
-export default StyledCard
+export default StyledCard;
