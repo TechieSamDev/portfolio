@@ -1,21 +1,14 @@
-import headshot from "../../assets/me.png";
-import StyledPic from "./StyledPic";
-import { motion } from "framer-motion";
-import { cardVariants } from "../../styles/ScrollEffectAnimationVariant";
-
 const HeadShot = () => {
   return (
-    <StyledPic>
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        variants={cardVariants}
-        viewport={{ once: true }}
-        className="wrapper rounded-circle"
-      >
-        <img className="img w-100" src={headshot} alt="head-shot" />
-      </motion.div>
-    </StyledPic>
+    <div className="border max-w- flex justify-center border-yellow-500">
+      <img
+        className=""
+        src="/src/assets/me.png"
+        width="200"
+        height="200"
+        alt="head-shot"
+      />
+    </div>
   );
 };
 

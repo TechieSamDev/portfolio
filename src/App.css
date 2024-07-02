@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,4 +25,4 @@ body {
 .btnPrimary {
   background: var(--color-primary);
   color: var(--color-bg);
-}
+} */

@@ -1,15 +1,11 @@
-import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
-import {
-  githubAddress,
-  linkedinAddress,
-  twitterAddress,
-} from "../../contact-links";
+import { Twitter, LinkedIn, GitHub } from '@mui/icons-material';
+import { CONTACT_DETAILS } from '../../constants';
 
 const ContactLinks = () => {
   return (
-    <div className="text-center gap-3">
+    <div className="">
       <a
-        href={twitterAddress}
+        href={CONTACT_DETAILS.twitter.link}
         rel="noreferrer"
         target="_blank"
         className="mx-2 rounded"
@@ -17,7 +13,7 @@ const ContactLinks = () => {
         <Twitter />
       </a>
       <a
-        href={linkedinAddress}
+        href={CONTACT_DETAILS.linkedin.link}
         rel="noreferrer"
         target="_blank"
         className="mx-2 rounded"
@@ -25,7 +21,7 @@ const ContactLinks = () => {
         <LinkedIn />
       </a>
       <a
-        href={githubAddress}
+        href={CONTACT_DETAILS.github.link}
         rel="noreferrer"
         target="_blank"
         className="mx-2 rounded"
