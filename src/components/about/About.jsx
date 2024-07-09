@@ -1,10 +1,11 @@
+import LinkButton from '../utils/LinkButton';
 import AboutCards from './AboutCards';
 import HeadShot from './HeadShot';
 
 function About() {
   return (
     <section id="about">
-      <div className=" space-y-5 border">
+      <div className=" space-y-10 py-10">
         <div className="text-center">
           <h6>Get To Know</h6>
           <h5>About me</h5>
@@ -26,9 +27,9 @@ function About() {
         </div>
 
         <div className="text-center">
-          <a href="#contact" className="bg-red-500">
+          <LinkButton variant="accent" href="#contact">
             Get in Touch
-          </a>
+          </LinkButton>
         </div>
       </div>
     </section>

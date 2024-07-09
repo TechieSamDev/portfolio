@@ -1,8 +1,10 @@
+import LinkButton from '../utils/LinkButton';
+
 const Project = ({
   details: { image, name, description, liveDemo, gitHub },
 }) => {
   return (
-    <div className="bg-secondary p-5 rounded-lg space-y-4">
+    <div className="bg-secondary hover:bg-secondary/20 border border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-4">
       <div className="space-y-3">
         <a href={liveDemo} target="_blank">
           <img
@@ -19,22 +21,23 @@ const Project = ({
       </div>
 
       <div className="py-5 space-x-5">
-        <a
+        <LinkButton
+          variant="accent"
           href={liveDemo}
           target={name === 'Portfolio Website' ? null : '_blank'}
           rel="noreferrer"
-          className="bg-accent text-primary p-3 rounded-lg hover:bg-accent/80 transition duration"
         >
           Live Demo
-        </a>
-        <a
+        </LinkButton>
+
+        <LinkButton
+          variant="slate-300"
           href={gitHub}
           target="_blank"
           rel="noreferrer"
-          className="bg-slate-300 text-primary p-3 rounded-lg hover:bg-slate-300/80 transition duration"
         >
           {gitHub ? 'Github' : 'Private Repo'}
-        </a>
+        </LinkButton>
       </div>
     </div>
   );

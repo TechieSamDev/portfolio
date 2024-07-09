@@ -1,4 +1,5 @@
 import { CONTACT_DETAILS } from '../../constants';
+import LinkButton from '../utils/LinkButton';
 
 const ContactDetails = () => {
   let REQUIRED_CONTACT = ['email', 'linkedin', 'whatsapp'];
@@ -10,14 +11,19 @@ const ContactDetails = () => {
       {REQUIRED_CONTACT.map(({ platform, address, link }) => (
         <li
           key={platform}
-          className="border p-5 bg-secondary rounded space-y-5"
+          className="bg-secondary hover:bg-secondary/20 border border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-5 text-center"
         >
-          <h6 className="border">{platform}</h6>
-          <address className="border">{address}</address>
-          <div className="text-center">
-            <a href={link} target="_blank" rel="noreferrer" className="border">
+          <h6 className="">{platform}</h6>
+          <address className="">{address}</address>
+          <div>
+            <LinkButton
+              variant="accent"
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+            >
               Send Message
-            </a>
+            </LinkButton>
           </div>
         </li>
       ))}

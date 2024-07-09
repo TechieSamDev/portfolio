@@ -1,140 +1,107 @@
-import TextField from '@mui/material/TextField';
-import { useFormik } from 'formik';
-import CircularProgress from '@mui/material/CircularProgress';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-const TEXT_FIELD_PROPS = [
-  {
-    name: 'fullName',
-    label: 'Full Name',
-    placeholder: 'John Doe',
-    multiline: false,
-  },
-  {
-    name: 'email',
-    label: 'Email',
-    placeholder: 'johndoe@example',
-    multiline: false,
-  },
-  {
-    name: 'message',
-    label: 'Message',
-    rows: '4',
-    multiline: true,
-    placeholder: 'Message here...',
-  },
-];
+import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const ContactInputs = () => {
-  const initialValues = {
-    fullName: '',
-    email: '',
-    message: '',
-  };
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const formik = useFormik({
-    initialValues,
-    validate: (values) => {
-      const errors = {};
-      // Check first name Validity
-      if (!values.fullName.trim()) {
-        errors.fullName = 'Full Name is required';
-      } else if (values.fullName.length < 5 || values.fullName.length > 15) {
-        errors.fullName = 'Full Name must be 15 characters or less';
-      }
+  const INPUT_STYLE =
+    'peer block w-full appearance-none border border-slate-600 bg-slate-300/10 py-3 px-3 text-sm text-slate-50 rounded focus:border-accent focus:outline-none focus:ring-0';
+  const LABEL_STYLE =
+    'absolute top-3 px-3 origin-[0] -translate-y-6 scale-75 transform duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-secondary peer-focus:bg-accent peer-focus:rounded';
 
-      // Check Email Validity
-      if (!values.email.trim()) {
-        errors.email = 'Email is Required';
-      } else if (
-        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-      ) {
-        errors.email = 'Invalid email address';
-      }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!fullName || !email || !message)
+      return toast.error('Submission failed: All fields required.');
 
-      // Check Message Validity
-      if (!values.message.trim()) {
-        errors.message = 'Message cannot be empty';
-      } else if (values.message.trim().length < 10) {
-        errors.message = 'Message should contain at least 10 characters';
-      }
-      return errors;
-    },
-
-    onSubmit: (values, { setSubmitting, resetForm }) => {
-      fetch('https://techiesamm.vercel.app/api/v1', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
+    setIsSubmitting(true);
+    fetch('https://techiesamm.vercel.app/api/v1', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ fullName, email, message }),
+    })
+      .then((response) => response.json())
+      .then((res) => {
+        setIsSubmitting(false);
+        console.log(res);
+        if (res.status === 'fail' || res.status === 'error')
+          return toast.error(res.message);
+        toast.success(res.message);
       })
-        .then((response) => response.json())
-        .then((res) => {
-          setSubmitting(false);
-          resetForm();
-          if (res.status === 'fail' || res.status === 'error')
-            return toast.error(res.message);
-          toast.success(res.message);
-        })
-        .catch(() => {
-          setSubmitting(false);
-          resetForm();
-          toast.error('An error occurred while sending message!');
-        });
-    },
-  });
+      .catch(() => {
+        setIsSubmitting(false);
+        toast.error('Failed to send. Check your internet!');
+      });
+    console.log(fullName, email, message);
+  };
 
   return (
     <>
-      <form className="col-lg-3 border" onSubmit={formik.handleSubmit}>
-        <ToastContainer />
-        {TEXT_FIELD_PROPS.map(
-          ({ name, label, rows, placeholder, multiline }) => (
-            <TextField
-              key={name}
-              style={{ color: '#ffff' }}
-              type={name === 'email' ? 'email' : 'text'}
-              className="d-block mt-4 text-light"
-              name={name}
-              placeholder={placeholder}
-              id={name}
-              onBlur={formik.handleBlur}
-              onChange={formik.handleChange}
-              value={formik.values[name]}
-              //  ========== MUI PROPERTIES ==========
-              InputProps={{
-                style: {
-                  color: '#ffff',
-                },
-              }}
-              error={formik.touched[name] && formik.errors[name] ? true : false}
-              helperText={
-                <span className="text-danger">
-                  {formik.touched[name] ? formik.errors[name] : null}
-                </span>
-              }
-              fullWidth
-              label={label}
-              focused
-              rows={rows}
-              multiline={multiline}
-              required
-            />
-          )
-        )}
-        <button
-          type="submit"
-          className="btn rounded btnPrimary px-5 mt-3"
-          disabled={formik.isSubmitting}
-        >
-          {formik.isSubmitting ? (
-            <CircularProgress size={20} color="inherit" />
-          ) : (
-            'SEND MESSAGE'
-          )}
-        </button>
+      <form onSubmit={handleSubmit} className="space-y-5">
+        {/* FullName */}
+        <div className="relative mt-4">
+          <input
+            name="fullName"
+            type="text"
+            minLength="5"
+            required
+            className={INPUT_STYLE}
+            placeholder=""
+            onChange={(e) => setFullName(e.target.value)}
+          />
+          <label htmlFor="fullName" className={LABEL_STYLE}>
+            Full Name
+          </label>
+        </div>
+
+        {/* Email */}
+        <div className="relative mt-4">
+          <input
+            name="email"
+            type="email"
+            required
+            className={INPUT_STYLE}
+            placeholder=""
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label htmlFor="test" className={LABEL_STYLE}>
+            Email
+          </label>
+        </div>
+
+        {/* Message */}
+        <div className="relative mt-4">
+          <textarea
+            type="text"
+            id="test"
+            className={INPUT_STYLE}
+            placeholder=""
+            rows={5}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+          <label htmlFor="test" className={LABEL_STYLE}>
+            Your Message
+          </label>
+        </div>
+
+        <div>
+          <button
+            type="submit"
+            className="bg-accent text-primary p-3 px-8 rounded-lg hover:bg-accent/80 transition duration"
+          >
+            {isSubmitting ? (
+              <svg class="animate-spin rounded-full w-5 h-5 border-4 m-auto border-r-slate-500"></svg>
+            ) : (
+              'Send Message'
+            )}
+          </button>
+        </div>
       </form>
     </>
   );

@@ -54,7 +54,7 @@ export const PROJECTS = [
   {
     name: 'Trems Nigeria',
     liveDemo: 'https://tremsnigeria.com',
-    image: '/src/assets/trems-nigeria.png',
+    image: '/assets/trems-nigeria.png',
     gitHub: '#',
     description:
       'A website has significantly boosted TREMS Nigeria brand income through its Search Engine Optimization (SEO), seamless user experience, intuitive navigation which have attracted a significant influx of new clients',
@@ -62,7 +62,7 @@ export const PROJECTS = [
   {
     name: 'Harmony Heaven',
     liveDemo: 'https://harmonyheaven.vercel.app',
-    image: '/src/assets/harmony-heaven.jpg',
+    image: '/assets/harmony-heaven.jpg',
     gitHub: 'https://github.com/techie-sam/quizlet',
     description:
       'A hotel website which entice potential guests and provide them with essential information, as room availability, booking options, and also providing seamless navigation.',
@@ -70,7 +70,7 @@ export const PROJECTS = [
   {
     name: 'V Bank',
     liveDemo: 'https://vbank.vercel.app/',
-    image: '/src/assets/V-bank.png',
+    image: '/assets/V-bank.png',
     gitHub: 'https://github.com/techie-sam/v-bank',
     description:
       'A functional banking solution which offers a range of basic features. It allows users to simulate transactions, manage accounts, and view balances in a secure and reliable environment.',
@@ -78,7 +78,7 @@ export const PROJECTS = [
   {
     name: 'Quizlet Quiz App',
     liveDemo: 'https://quizlet001.vercel.app',
-    image: '/src/assets/quizlet.png',
+    image: '/assets/quizlet.png',
     gitHub: 'https://github.com/techie-sam/cbt_react_app',
     description:
       'A test app designed to combats exam malpractice. Create and take tests online with multiple-choice questions, timed tests, and advanced analytics for progress tracking',
