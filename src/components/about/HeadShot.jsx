@@ -1,6 +1,6 @@
 const HeadShot = () => {
   return (
-    <div className="flex justify-center">
+    <div className="relative flex justify-center border">
       <img
         className=""
         src="/assets/me.png"
@@ -8,6 +8,10 @@ const HeadShot = () => {
         height="200"
         alt="head-shot"
       />
+      <div
+        width="200"
+        className="absolute  w-[200px] h-[200px] rounded-full bg-accent/ backdrop-filter  border border-red-500"
+      ></div>
     </div>
   );
 };
