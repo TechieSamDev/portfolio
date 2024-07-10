@@ -8,10 +8,10 @@ const PERMALINKS = [
 
 const PermaLinks = () => {
   return (
-    <ul className="m-auto grid md:grid-flow-col">
+    <ul className="m-auto grid md:grid-flow-col space-y-3">
       {PERMALINKS.map(({ link, text }) => (
         <li key={text} className="">
-          <a href={link} className="hover:text-secondary">
+          <a href={link} className="hover:text-secondary hover:text-lg transition-all">
             {text}
           </a>
         </li>

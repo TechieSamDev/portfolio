@@ -33,6 +33,7 @@ const ContactInputs = () => {
         if (res.status === 'fail' || res.status === 'error')
           return toast.error(res.message);
         toast.success(res.message);
+        e.target.reset();
       })
       .catch(() => {
         setIsSubmitting(false);
@@ -45,6 +46,7 @@ const ContactInputs = () => {
     <>
       <form onSubmit={handleSubmit} className="space-y-5">
         {/* FullName */}
+        <p>Send Me a message</p>
         <div className="relative mt-4">
           <input
             name="fullName"
@@ -94,6 +96,7 @@ const ContactInputs = () => {
           <button
             type="submit"
             className="bg-accent text-primary p-3 px-8 rounded-lg hover:bg-accent/80 transition duration"
+            disabled={isSubmitting}
           >
             {isSubmitting ? (
               <svg class="animate-spin rounded-full w-5 h-5 border-4 m-auto border-r-slate-500"></svg>

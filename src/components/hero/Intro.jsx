@@ -5,7 +5,7 @@ const Intro = () => {
       Samuel Abolade.{' '}
       <small className="text-slate-500 text-sm font-light">Techie Sam</small>
     </h1>,
-    <h5 className="text-lg text-slate-200">Software Engineer</h5>,
+    <h5 className="text-lg text-slate-400">Software Engineer</h5>,
   ];
   return <div className="space-y-2">{introTexts.map((text) => text)}</div>;
 };
