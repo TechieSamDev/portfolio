@@ -30,7 +30,7 @@ const PermaLinks = () => {
           href="#projects"
           className="hover:text-secondary hover:text-lg transition-all"
         >
-          Skills
+          Projects
         </a>
       </li>
       <li>
@@ -38,7 +38,7 @@ const PermaLinks = () => {
           href="#contact"
           className="hover:text-secondary hover:text-lg transition-all"
         >
-          Skills
+          Contact
         </a>
       </li>
     </ul>
