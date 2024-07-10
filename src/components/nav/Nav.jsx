@@ -1,30 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import PersonIcon from '@mui/icons-material/Person';
-import CollectionsBookmarkRoundedIcon from '@mui/icons-material/CollectionsBookmarkRounded';
-import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
-import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
-
+import {
+  HiMiniBriefcase,
+  HiMiniChatBubbleOvalLeftEllipsis,
+  HiMiniCog,
+  HiMiniHome,
+  HiMiniUser,
+} from 'react-icons/hi2';
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#hero');
 
   const NAV_CONTENT = [
-    { href: '#hero', icon: <HomeRoundedIcon className="fs-6" />, id: 'hero' },
-    { href: '#about', icon: <PersonIcon className="fs-6" />, id: 'about' },
+    {
+      href: '#hero',
+      icon: <HiMiniHome />,
+    },
+    {
+      href: '#about',
+      icon: <HiMiniUser />,
+    },
     {
       href: '#skills',
-      icon: <CollectionsBookmarkRoundedIcon className="fs-6" />,
-      id: 'skills',
+      icon: <HiMiniCog />,
     },
     {
       href: '#projects',
-      icon: <WorkHistoryIcon className="fs-6" />,
-      id: 'projects',
+      icon: <HiMiniBriefcase />,
     },
     {
       href: '#contact',
-      icon: <SpeakerNotesIcon className="fs-6" />,
-      id: 'contact',
+      icon: <HiMiniChatBubbleOvalLeftEllipsis />,
     },
   ];
 

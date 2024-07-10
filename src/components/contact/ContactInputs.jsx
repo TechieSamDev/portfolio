@@ -1,6 +1,6 @@
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 const ContactInputs = () => {
   const [fullName, setFullName] = useState('');

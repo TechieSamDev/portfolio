@@ -20,9 +20,9 @@ function About() {
             As an outcome-driven web developer, I am committed to delivering
             excellent results. Hiring me means working with a motivated
             individual who is dedicated to excellence. I excel at interface
-            design as well as backend development. <br /> <br />I flourish in
-            fast-paced environments and enjoy teamwork. Let's connect to create
-            incredible digital experiences!
+            design as well as backend development. <br /> <br />
+            My strengths include thriving in fast-paced environments and
+            successfully collaborating with teams. Let's connect to create incredible digital experiences!
           </p>
         </div>
 

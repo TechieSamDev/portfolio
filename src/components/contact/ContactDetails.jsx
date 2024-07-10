@@ -13,7 +13,7 @@ const ContactDetails = () => {
           key={platform}
           className="bg-secondary hover:bg-secondary/20 border border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-5 text-center"
         >
-          <h6 className="">{platform}</h6>
+          <h6>{platform}</h6>
           <address className="">{address}</address>
           <div>
             <LinkButton

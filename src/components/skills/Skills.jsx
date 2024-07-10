@@ -1,5 +1,6 @@
 import VerifiedIcon from '@mui/icons-material/Verified';
 import { LANGUAGES, TECHNOLOGIES } from '../../constants';
+import { HiMiniCheckBadge } from 'react-icons/hi2';
 // console.log(49 % 2);
 const Skills = () => {
   return (
@@ -17,8 +18,8 @@ const Skills = () => {
             <div className="grid grid-cols-3 gap-2 gap-y-5 justify-center">
               {LANGUAGES.map((language) => (
                 <div key={language} className="flex text-xs">
-                  <p className="p-2">
-                    <VerifiedIcon style={{ fontSize: '1em' }} /> {language}
+                  <p className="p-2 flex gap-1  ">
+                    <HiMiniCheckBadge style={{ fontSize: '1em' }} /> {language}
                   </p>
                 </div>
               ))}
@@ -31,8 +32,9 @@ const Skills = () => {
             <div className="grid grid-cols-3 gap-2 gap-y-5 justify-center ">
               {TECHNOLOGIES.map((technology, i) => (
                 <div key={technology} className="flex  text-xs m-auto">
-                  <p className="p-2 ">
-                    <VerifiedIcon style={{ fontSize: '1em' }} /> {technology}
+                  <p className="p-2  flex gap-1 ">
+                    <HiMiniCheckBadge style={{ fontSize: '1em' }} />{' '}
+                    {technology}
                   </p>
                 </div>
               ))}
