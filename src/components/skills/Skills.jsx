@@ -1,4 +1,3 @@
-import VerifiedIcon from '@mui/icons-material/Verified';
 import { LANGUAGES, TECHNOLOGIES } from '../../constants';
 import { HiMiniCheckBadge } from 'react-icons/hi2';
 // console.log(49 % 2);
