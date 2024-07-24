@@ -12,7 +12,7 @@ function About() {
         </div>
 
         <div className="lg:max-w-[70%] space-y-5">
-          <div className="flex gap-5 md:px-12">
+          <div className="md:flex space-y-5 gap-5 md:px-12">
             <HeadShot />
             <AboutCards />
           </div>
