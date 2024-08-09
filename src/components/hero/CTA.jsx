@@ -11,7 +11,7 @@ const CTA = () => {
       >
         Download CV
       </LinkButton>
-      <LinkButton href="#contact" variant="slate-300">
+      <LinkButton href="#contact" variant="accent">
         Let's Talk
       </LinkButton>
     </div>

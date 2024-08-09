@@ -1,6 +1,6 @@
 const PermaLinks = () => {
   return (
-    <ul className="m-auto grid md:grid-flow-col space-y-3 md:space-y-0">
+    <ul className="m-auto grid md:grid-flow-col min-h-10 space-y-3 md:space-y-0">
       <li>
         <a
           href="#"

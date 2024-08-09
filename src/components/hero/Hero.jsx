@@ -3,13 +3,16 @@ import Intro from './Intro';
 import { CONTACT_DETAILS } from '../../constants';
 const Hero = () => {
   return (
-    <header id="hero" className="h-screen flex items-center container m-auto">
+    <header
+      id="hero"
+      className="h-screen relative flex items-center container m-auto"
+    >
       <div className="space-y-8 px-5 lg:mx-12">
         <Intro />
         <CTA />
         <div className="absolute bottom-24 right-8 md:right-36">
-          <div className="flex flex-col space-y-4">
-          <div className='min-h-16 bg-slate-300 w-1 m-auto '></div>
+          <div className="hidden md:flex flex-col space-y-4">
+            <div className="min-h-16 bg-slate-300 w-1 m-auto "></div>
             <a
               rel="noreferrer"
               target="_blank"

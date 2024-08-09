@@ -5,19 +5,21 @@ const Project = ({
 }) => {
   return (
     <div className="bg-secondary hover:bg-secondary/20 border border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-4">
-      <div className="space-y-3">
+      <div className="space-y-5">
         <a href={liveDemo} target="_blank">
           <img
             src={image}
-            height="300"
+            height="250"
             width="350"
-            className="w-full h-full rounded-lg"
+            className="w-ful h-full rounded-lg border"
             alt={name}
           />
         </a>
-
-        <h5 className="font-bold">{name}</h5>
-        <div className="text-justify h-32">{description}</div>
+        <div className="space-y-3">
+          <h5 className="font-bold">{name}</h5>
+          <div className="text-justify min-h-32">{description}</div>
+        </div>
+        {/* <title>e</title> */}
       </div>
 
       <div className="py-5 space-x-5">

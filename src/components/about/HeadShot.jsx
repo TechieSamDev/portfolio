@@ -5,8 +5,8 @@ const HeadShot = () => {
         <img
           className="mix-blend-overlay hover:mix-blend-normal filter-none m-auto"
           src="/assets/me.png"
-          width="300"
-          height="300"
+          width="250"
+          height="250"
           alt="head-shot"
         />
       </div>

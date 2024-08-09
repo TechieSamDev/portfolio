@@ -39,7 +39,14 @@ export const CONTACT_DETAILS = {
 };
 
 // SKILLS
-export const LANGUAGES = ['HTML', 'CSS', 'JavaScript', 'SQL', 'PHP'];
+export const LANGUAGES = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'SQL',
+  'PHP',
+];
 export const TECHNOLOGIES = [
   'React',
   'Next',
@@ -51,14 +58,14 @@ export const TECHNOLOGIES = [
 
 // PROJECTS
 export const PROJECTS = [
-  {
-    name: 'Trems Nigeria',
-    liveDemo: 'https://tremsnigeria.com',
-    image: '/assets/trems-nigeria.png',
-    gitHub: '#',
-    description:
-      'A website has significantly boosted TREMS Nigeria brand income through its Search Engine Optimization (SEO), seamless user experience, intuitive navigation which have attracted a significant influx of new clients',
-  },
+  // {
+  //   name: 'Trems Nigeria',
+  //   liveDemo: 'https://tremsnigeria.com',
+  //   image: '/assets/trems-nigeria.png',
+  //   gitHub: '#',
+  //   description:
+  //     'A website has significantly boosted TREMS Nigeria brand income through its Search Engine Optimization (SEO), seamless user experience, intuitive navigation which have attracted a significant influx of new clients',
+  // },
   {
     name: 'Harmony Heaven',
     liveDemo: 'https://harmonyheaven.vercel.app',
@@ -84,4 +91,3 @@ export const PROJECTS = [
       'A test app designed to combats exam malpractice. Create and take tests online with multiple-choice questions, timed tests, and advanced analytics for progress tracking',
   },
 ];
-

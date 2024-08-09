@@ -4,14 +4,16 @@ import { HiMiniCheckBadge } from 'react-icons/hi2';
 const Skills = () => {
   return (
     <section id="skills" className="">
-      <div className="py-1 space-y-5">
+      <div className="py-1 space-y-10">
         <div className="text-center mt-5">
-          <h6>Get to know</h6>
-          <h5>About my Skills</h5>
+          <h5 className="font-semibold">
+            Get to know <br />
+            About my Skills
+          </h5>
         </div>
 
         {/* LAnguages */}
-        <div className="grid md:grid-cols-2 gap-10 md:p-10 lg:w-4/5 ">
+        <div className="grid md:grid-cols-2 gap-10 md:px-10 md:py-8 lg:w-4/5 ">
           <div className="py-6 px-2 space-y-5 bg-secondary hover:bg-secondary/50 transition-all rounded-lg border border-gray-600">
             <h4 className="text-center">Language</h4>
             <div className="grid grid-cols-3 gap-2 gap-y-5 justify-center">

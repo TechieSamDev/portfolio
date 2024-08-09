@@ -28,7 +28,6 @@ const ContactInputs = () => {
       .then((response) => response.json())
       .then((res) => {
         setIsSubmitting(false);
-        console.log(res);
         if (res.status === 'fail' || res.status === 'error')
           return toast.error(res.message);
         toast.success(res.message);
@@ -38,7 +37,6 @@ const ContactInputs = () => {
         setIsSubmitting(false);
         toast.error('Failed to send. Check your internet!');
       });
-    console.log(fullName, email, message);
   };
 
   return (
