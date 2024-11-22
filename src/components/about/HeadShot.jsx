@@ -4,7 +4,7 @@ const HeadShot = () => {
       <div className="w-max rounded-full bg-secondary border border-slate-800">
         <img
           className="mix-blend-overlay hover:mix-blend-normal filter-none m-auto"
-          src="/assets/me.png"
+          src="/assets/avatar.png"
           width="250"
           height="250"
           alt="head-shot"

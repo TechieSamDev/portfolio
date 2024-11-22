@@ -7,7 +7,7 @@ function About() {
     <section id="about">
       <div className=" space-y-10 py-10">
         <div className="text-center">
-          <h5 className='font-semibold'>
+          <h5 className="font-semibold">
             Get To Know <br />
             About me
           </h5>
@@ -19,13 +19,11 @@ function About() {
             <AboutCards />
           </div>
           <p className="text-justify md:px-12">
-            As an outcome-driven web developer, I am committed to delivering
-            excellent results. Hiring me means working with a motivated
-            individual who is dedicated to excellence. I excel at interface
-            design as well as backend development. <br /> <br />
-            My strengths include thriving in fast-paced environments and
-            successfully collaborating with teams. Let's connect to create
-            incredible digital experiences!
+            I am a developer who loves creating websites and apps that deliver
+            real results. It’s not just about coding for me—I’m always thinking
+            about how the websites I build can help clients reach their goals
+            and connect with their audience. <br /> Outside of coding, I like exploring
+            new ideas and finding better ways to make my work more impactful.
           </p>
         </div>
 
