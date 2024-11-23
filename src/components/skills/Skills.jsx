@@ -7,8 +7,8 @@ const Skills = () => {
       <div className="py-1 space-y-10">
         <div className="text-center mt-5">
           <h5 className="font-semibold">
-            Get to know <br />
-            Language & Technologies
+            See what powers <br />
+            My Projects
           </h5>
         </div>
 

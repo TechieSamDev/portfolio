@@ -22,7 +22,7 @@ const PermaLinks = () => {
           href="#skills"
           className="hover:text-secondary hover:text-lg transition-all"
         >
-          Skills
+          Tech Stacks
         </a>
       </li>
       <li>

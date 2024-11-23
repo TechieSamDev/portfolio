@@ -4,7 +4,7 @@ import { PROJECTS } from '../../constants';
 const Projects = () => {
   return (
     <section id="projects">
-      <div className="space-y-10">
+      <div className="space-y-10 py-10">
         <div className="text-center ">
           <h5 className='font-semibold'>Recent Projects <br />I've worked on</h5>
         </div>

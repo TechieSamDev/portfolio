@@ -4,7 +4,7 @@ const Project = ({
   details: { image, name, description, liveDemo, gitHub },
 }) => {
   return (
-    <div className="bg-secondary hover:bg-secondary/20 border border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-4">
+    <div className="bg-secondary hover:bg-secondary/20 border-2 border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-4">
       <div className="space-y-5">
         <a href={liveDemo} target="_blank">
           <img
