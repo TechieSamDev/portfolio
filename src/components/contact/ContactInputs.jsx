@@ -2,7 +2,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 
 const ContactInputs = () => {
-  const [fullName, setFullName] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -14,7 +14,7 @@ const ContactInputs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-    if (!fullName || !email || !message)
+    if (!name || !email || !message)
       return toast.error("Submission failed: All fields required.");
 
     if (!emailRegex.test(email)) {
@@ -24,12 +24,12 @@ const ContactInputs = () => {
     }
 
     setIsSubmitting(true);
-    fetch("https://techiesamm.vercel.app/api/v1", {
+    fetch("https://techiesamm.vercel.app/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ fullName, email, message }),
+      body: JSON.stringify({ name, email, message }),
     })
       .then((response) => response.json())
       .then((res) => {
@@ -51,23 +51,23 @@ const ContactInputs = () => {
         {/* FullName */}
         <p>Send Me a message</p>
         <div className="relative mt-4">
-          <label htmlFor="fullName" className={LABEL_STYLE}>
+          <label htmlFor="name" className={LABEL_STYLE}>
             Your Name:
           </label>
           <input
-            name="fullName"
+            name="name"
             type="text"
             minLength="5"
             required
             className={INPUT_STYLE}
             placeholder="How should I call you?"
-            onChange={(e) => setFullName(e.target.value?.trim())}
+            onChange={(e) => setName(e.target.value?.trim())}
           />
         </div>
 
         {/* Email */}
         <div className="relative mt-4">
-          <label htmlFor="test" className={LABEL_STYLE}>
+          <label htmlFor="email" className={LABEL_STYLE}>
             Email:
           </label>
           <input
@@ -82,12 +82,12 @@ const ContactInputs = () => {
 
         {/* Message */}
         <div className="relative mt-4">
-          <label htmlFor="test" className={LABEL_STYLE}>
+          <label htmlFor="message" className={LABEL_STYLE}>
             Your Message:
           </label>
           <textarea
             type="text"
-            id="test"
+            id="message"
             className={INPUT_STYLE}
             placeholder="Your thoughts here..."
             rows={5}
