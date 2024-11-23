@@ -8,11 +8,11 @@ const Intro = () => {
       key="name"
       className="text-5xl font-bold text-slate-200"
     >
-      Samuel Abolade.{' '}
+      Samuel Abolade.{" "}
       <small className="text-slate-500 text-sm font-light">Techie Sam</small>
     </h1>,
     <h5 key="title" className="text-lg text-slate-400">
-      Software Engineer
+      Software Engineer — <span className="text-slate-200">(Web Developer)</span>
     </h5>,
   ];
   return <div className="space-y-2">{introTexts.map((text) => text)}</div>;

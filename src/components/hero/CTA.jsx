@@ -7,7 +7,7 @@ const CTA = () => {
         variant="accent"
         href="/assets/001Abolade-Samuel-Resume.pdf"
         download="001Abolade-Samuel-(Techie_Sam)-Resume.pdf"
-        className="border border-accent text-accent p-3 rounded-lg hover:bg-${variant}/80 transition duration"
+        className="border-2 border-accent text-accent p-3 rounded-lg hover:bg-${variant}/80 transition duration outline-none focus:bg-accent/50 focus:text-slate-100"
       >
         Download CV
       </LinkButton>
