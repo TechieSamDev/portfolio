@@ -1,4 +1,4 @@
-import LinkButton from '../utils/LinkButton';
+import LinkButton from "../utils/LinkButton";
 
 const Project = ({
   details: { image, name, description, liveDemo, gitHub },
@@ -26,20 +26,22 @@ const Project = ({
         <LinkButton
           variant="accent"
           href={liveDemo}
-          target={name === 'Portfolio Website' ? null : '_blank'}
+          target={name === "Portfolio Website" ? null : "_blank"}
           rel="noreferrer"
         >
           Live Demo
         </LinkButton>
 
-        <LinkButton
-          variant="slate-300"
-          href={gitHub}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {gitHub ? 'Github' : 'Private Repo'}
-        </LinkButton>
+        {gitHub && (
+          <LinkButton
+            variant="slate-300"
+            href={gitHub}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </LinkButton>
+        )}
       </div>
     </div>
   );
