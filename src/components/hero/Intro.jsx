@@ -11,8 +11,8 @@ const Intro = () => {
       Samuel Abolade.{" "}
       <small className="text-slate-500 text-sm font-light">Techie Sam</small>
     </h1>,
-    <h5 key="title" className="text-lg text-slate-400">
-      Software Engineer — <span className="text-slate-200">(Web Developer)</span>
+    <h5 key="title" className=" text-slate-400 tracking-widest text-sm">
+      Web Developer
     </h5>,
   ];
   return <div className="space-y-2">{introTexts.map((text) => text)}</div>;
