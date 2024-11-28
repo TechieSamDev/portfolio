@@ -15,7 +15,9 @@ const Intro = () => {
       Web Developer
     </h5>,
   ];
-  return <div className="space-y-2">{introTexts.map((text) => text)}</div>;
+  return (
+    <div className="space-y-2 -mt-16">{introTexts.map((text) => text)}</div>
+  );
 };
 
 export default Intro;
