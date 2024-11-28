@@ -82,9 +82,9 @@ export const PROJECTS = [
   //     "A functional banking solution which offers a range of basic features. It allows users to simulate transactions, manage accounts, and view balances in a secure and reliable environment.",
   // },
   {
-    name: "Quizlet Quiz App",
+    name: "$FLOOF",
     liveDemo: "https://quizlet001.vercel.app",
-    image: "/assets/quizlet.png",
+    image: "/assets/floof-cover.png",
     gitHub: "https://github.com/techie-sam/cbt_react_app",
     description:
       "A test app designed to combats exam malpractice. Create and take tests online with multiple-choice questions, timed tests, and advanced analytics for progress tracking",
