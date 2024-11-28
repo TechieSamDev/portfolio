@@ -36,7 +36,7 @@ const ContactInputs = () => {
         setIsSubmitting(false);
         if (res.status === "fail" || res.status === "error")
           return toast.error(res.message);
-        toast.success(res.message);
+        toast.success("Your Message was sent.");
         e.target.reset();
       })
       .catch(() => {
