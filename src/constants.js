@@ -56,20 +56,19 @@ export const TECHNOLOGIES = [
   "NodeJS",
 ];
 
-// PROJECTS
 export const PROJECTS = [
   {
-    name: "BS Community",
-    // liveDemo: "https://tremsnigeria.com",
+    name: "$BSC - Building Strong Community",
     image: "/assets/bsc-cover.png",
-    gitHub: "#",
+    liveDemo: "https://bsc.vercel.app",
     description:
-      "A website built for a Web3 project. It shows their smart contract address, contact links, a decentralized exchange (DEX), and a section that explains how to buy their token, making things easy for visitors to find everything they need.",
+      "A Web3 project website designed to provide clear and easy access to essential information. The site features the project's smart contract address, contact links, a decentralized exchange (DEX), and a step-by-step guide on how to buy the token, making things easy for visitors to quickly find everything they need.",
   },
   {
     name: "Heal Me  Non-profit Organization",
     image: "/assets/heal-me-cover.png",
     // gitHub: "https://github.com/techie-sam/quizlet",
+    liveDemo: "https://heal-me-frontend.vercel.app",
     description:
       "A non-profit organization that helps orphaned children, hospital patients, new mothers, and individuals with disabilities. I focused on designing the parts of the website people interact with, and suggested ways to improve the backend.",
   },
@@ -83,10 +82,10 @@ export const PROJECTS = [
   // },
   {
     name: "$FLOOF",
-    liveDemo: "https://quizlet001.vercel.app",
+    liveDemo: "https://floofcto.vercel.app",
     image: "/assets/floof-cover.png",
     gitHub: "https://github.com/techie-sam/cbt_react_app",
     description:
-      "A test app designed to combats exam malpractice. Create and take tests online with multiple-choice questions, timed tests, and advanced analytics for progress tracking",
+      "A Web3 project website redesigned to improve its look, usability, and overall user experience. I created a modern, user-friendly design that aligns with the project's vision and enhances user engagement",
   },
 ];
