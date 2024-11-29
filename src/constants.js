@@ -62,7 +62,7 @@ export const PROJECTS = [
     image: "/assets/bsc-cover.png",
     liveDemo: "https://bsc.vercel.app",
     description:
-      "A Web3 project website designed to provide clear and easy access to essential information. The site features the project's smart contract address, contact links, a decentralized exchange (DEX), and a step-by-step guide on how to buy the token, making things easy for visitors to quickly find everything they need.",
+      "A Web3 project website made to help users easily find everything they need. It includes the project's smart contract address, contact links, a decentralized exchange (DEX), and a simple guide on how to buy the token.",
   },
   {
     name: "Heal Me  Non-profit Organization",
@@ -84,7 +84,7 @@ export const PROJECTS = [
     name: "$FLOOF",
     liveDemo: "https://floofcto.vercel.app",
     image: "/assets/floof-cover.png",
-    gitHub: "https://github.com/techie-sam/cbt_react_app",
+    // gitHub: "https://github.com/techie-sam/cbt_react_app",
     description:
       "A Web3 project website redesigned to improve its look, usability, and overall user experience. I created a modern, user-friendly design that aligns with the project's vision and enhances user engagement",
   },
