@@ -26,8 +26,8 @@ export const CONTACT_DETAILS = {
   },
   github: {
     platform: "Github",
-    address: `@${twitterAddress.split("/").pop()}`,
-    link: twitterAddress,
+    address: `@${githubAddress.split("/").pop()}`,
+    link: githubAddress,
     icon: "",
   },
   whatsapp: {
