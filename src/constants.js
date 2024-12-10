@@ -63,7 +63,7 @@ export const PROJECTS = [
     // gitHub: "https://github.com/techie-sam/quizlet",
     liveDemo: "https://bfwog.vercel.app",
     description:
-      "A clean and simple page for $BabyFwog, which gives visitors everything they need without making them hunt for it. From token buying guides to smart contract details and the project roadmap, all the key info is easy to find in a friendly and modern design.",
+      "A fresh and inviting landing page for $BabyFwog that puts everything visitors need right at their fingertips. No hunting, no hassle, just clear access to token buying guides, smart contract details, and the project roadmap, ",
   },
   {
     name: "$BSC - Building Strong Community",
@@ -82,7 +82,7 @@ export const PROJECTS = [
       "A Web3 project website redesigned to improve its look, usability, and overall user experience. I created a modern, user-friendly design that aligns with the project's vision and enhances user engagement",
   },
   {
-    name: "Heal Me  Non-profit Organization", 
+    name: "Heal Me  Non-profit Organization",
     image: "/assets/heal-me-cover.png",
     // gitHub: "https://github.com/techie-sam/quizlet",
     // liveDemo: "https://heal-me-frontend.vercel.app",
