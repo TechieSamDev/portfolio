@@ -1,8 +1,8 @@
-import { CONTACT_DETAILS } from '../../constants';
-import LinkButton from '../utils/LinkButton';
+import { CONTACT_DETAILS } from "../../constants";
+import LinkButton from "../utils/LinkButton";
 
 const ContactDetails = () => {
-  let REQUIRED_CONTACT = ['email', 'linkedin', 'whatsapp'];
+  let REQUIRED_CONTACT = ["email", "linkedin", "whatsapp", "telegram"];
   REQUIRED_CONTACT = REQUIRED_CONTACT.map(
     (details) => CONTACT_DETAILS[details]
   );
