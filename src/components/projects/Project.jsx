@@ -1,3 +1,4 @@
+import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import LinkButton from "../utils/LinkButton";
 
 const Project = ({
@@ -19,7 +20,6 @@ const Project = ({
           <h5 className="font-bold">{name}</h5>
           <div className="text-justify min-h-32">{description}</div>
         </div>
-        {/* <title>e</title> */}
       </div>
 
       <div className="py-5 space-x-5">
@@ -29,7 +29,8 @@ const Project = ({
           target={name === "Portfolio Website" ? null : "_blank"}
           rel="noreferrer"
         >
-          Live Demo
+          See It Live {"  "}
+            <HiArrowTopRightOnSquare className="text-sm inline size-5 font-bold" />
         </LinkButton>
 
         {gitHub && (
