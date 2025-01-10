@@ -27,7 +27,7 @@ function About() {
 
 Techie Sam is a developer who loves creating websites and apps that deliver real results. Whether web2 or web3 space, I build solutions that help clients connect with their audience and achieve their goals. For me, coding isn’t just about writing code, it’s about solving real problems and making an impact.
 
-<br /> Outside of coding, I enjoy exploring new ideas and finding ways to make my work more effective and meaningful. Whether working as part of a team or independently, I’m committed to delivering creative and impactful solutions.
+<br /> <br /> Outside of coding, I enjoy exploring new ideas and finding ways to make my work more effective and meaningful. Whether working as part of a team or independently, I’m committed to delivering creative and impactful solutions.
           </p>
         </div>
 
