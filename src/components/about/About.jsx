@@ -19,11 +19,15 @@ function About() {
             <AboutCards />
           </div>
           <p className="text-justify md:px-12">
-            I am a developer who loves creating websites and apps that deliver
+{/*             I am a developer who loves creating websites and apps that deliver
             real results. It’s not just about coding for me—I’m always thinking
             about how the websites I build can help clients reach their goals
             and connect with their audience. <br /> Outside of coding, I like exploring
-            new ideas and finding better ways to make my work more impactful.
+            new ideas and finding better ways to make my work more impactful. */}
+
+Techie Sam is a developer who loves creating websites and apps that deliver real results. Whether web2 or web3 space, I build solutions that help clients connect with their audience and achieve their goals. For me, coding isn’t just about writing code, it’s about solving real problems and making an impact.
+
+Outside of coding, I enjoy exploring new ideas and finding ways to make my work more effective and meaningful. Whether working as part of a team or independently, I’m committed to delivering creative and impactful solutions.
           </p>
         </div>
 
