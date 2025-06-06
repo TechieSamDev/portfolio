@@ -1,30 +1,48 @@
-import LinkButton from '../utils/LinkButton';
-import AboutCards from './AboutCards';
-import HeadShot from './HeadShot';
+import HorizontalRule from "../utils/HorizontalRule";
+import LinkButton from "../utils/LinkButton";
+import HeadShot from "./HeadShot";
 
 function About() {
   return (
-    <section id="about">
+    <section id="about" className="max-w-5xl m-auto p border">
       <div className=" space-y-10 py-10">
-        <div className="text-center">
-          <h5 className="font-semibold">
-            Get To Know <br />
-            About me
+        <div className="flex items-center">
+          <h5 className="text-2xl whitespace-nowrap pr-2 border px text-slate-200">
+            <span className="text-sm text-accent px-2">01. </span> About me
           </h5>
+          <HorizontalRule />
         </div>
 
-        <div className="lg:max-w-[70%] space-y-5">
-          <div className="md:flex space-y-5 gap-5 md:px-12">
-            <HeadShot />
-            <AboutCards />
+        <div className="md:flex space-y-10">
+          <div className="space-y-3 border">
+            <div className="">
+              {/* <div className="md:flex space-y-5 gap-5 md:px-12"></div> */}
+              <p className="tracking-wide text-slate-400 px-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur, cum! Architecto, assumenda eligendi commodi corrupti
+                quasi repudiandae possimus non vel magni dolor iure, earum
+                totam, dolores recusandae incidunt cum molestias iusto.
+                Provident, fugiat modi. Suscipit neque iusto cum labore alias
+                nihil ratione repudiandae ipsam at! Distinctio atque culpa est!
+                Nesciunt!
+              </p>
+            </div>
+            <div className="px-5 ">
+              <ul className="grid grid-cols-2 p-2 relative text-slate-400 gap-2 justify-evenly m-auto">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>TailwindCSS</li>
+                <li> Node.js </li>
+                <li>WordPress Dev.</li>
+              </ul>
+            </div>
           </div>
-          <p className="text-justify md:px-12">
-            I am a developer who loves creating websites and apps that deliver
-            real results. It’s not just about coding for me—I’m always thinking
-            about how the websites I build can help clients reach their goals
-            and connect with their audience. <br /> Outside of coding, I like exploring
-            new ideas and finding better ways to make my work more impactful.
-          </p>
+
+          <div className="p-10">
+            <HeadShot />
+          </div>
         </div>
 
         <div className="text-center">

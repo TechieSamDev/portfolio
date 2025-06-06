@@ -49,7 +49,7 @@ const ContactInputs = () => {
     <>
       <form onSubmit={handleSubmit} className="space-y-5">
         {/* FullName */}
-        <p>Send Me a message</p>
+        <p className="text-accent font-bold">Send Me a message</p>
         <div className="relative mt-4">
           <label htmlFor="name" className={LABEL_STYLE}>
             Your Name:

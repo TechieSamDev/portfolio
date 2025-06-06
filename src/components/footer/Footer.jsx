@@ -3,7 +3,7 @@ import PermaLinks from './PermaLinks';
 
 const Footer = () => {
   return (
-    <footer id="footer" className="bg-accent py-5 pb-48 text-primary">
+    <footer id="footer" className="bg-accent py-5 pb-48 border text-primary">
       <div className="md:w-2/5 m-auto space-y-5 text-center">
         <a href="#home" className="text-xl font-semibold tracking-wide">
           Samuel Abolade

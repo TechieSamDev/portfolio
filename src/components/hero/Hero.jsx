@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <header
       id="hero"
-      className="h-screen relative flex items-center container m-auto"
+      className="h-screen relative flex items-center justify-center border container m-auto"
     >
       <div className="space-y-8 px-5 lg:mx-12">
         <Intro />

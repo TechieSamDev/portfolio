@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,17 +14,22 @@ body {
      */
   @apply text-slate-300;
   background: rgb(16, 33, 68);
-  background: radial-gradient(
-    circle,
-    rgba(16, 33, 68, 1) 0%,
-    rgba(14, 22, 42, 1) 10%
-  );
+  background: radial-gradient(circle,
+      rgba(16, 33, 68, 1) 0%,
+      rgba(14, 22, 42, 1) 10%);
+}
+
+
+ul li::before {
+  content: "▹";
+  position: absolute;
+  @apply text-accent -ml-3;
+}
+
+li {
+  @apply flex px-2
 }
 
 section {
-  @apply my-10 mx-5;
-}
-
-section div {
-  @apply container m-auto;
+  @apply space-y-20 px-2
 }

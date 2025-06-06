@@ -1,4 +1,4 @@
-import LinkButton from '../utils/LinkButton';
+import LinkButton from "../utils/LinkButton";
 
 const CTA = () => {
   return (
@@ -7,12 +7,12 @@ const CTA = () => {
         variant="accent"
         href="/assets/001Abolade-Samuel-Resume.pdf"
         download="001Abolade-Samuel-(Techie_Sam)-Resume.pdf"
-        className="border-2 border-accent text-accent p-3 rounded-lg hover:bg-${variant}/80 transition duration outline-none focus:bg-accent/50 focus:text-slate-100"
+        className="border border-accent text-accent py-3 px-4 rounded-lg transition duration outline-none flex items-center  focus:bg-accent/50 focus:text-slate-100"
       >
-        Get My Resume
+        Get Resume
       </LinkButton>
       <LinkButton href="#contact" variant="accent">
-        Let's Talk
+        Get in Touch
       </LinkButton>
     </div>
   );

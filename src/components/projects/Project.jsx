@@ -12,13 +12,13 @@ const Project = ({
             src={image}
             height="250"
             width="350"
-            className="w-ful h-full rounded-lg border"
+            className="w-full h-full rounded-lg border"
             alt={name}
           />
         </a>
         <div className="space-y-3">
           <h5 className="font-bold">{name}</h5>
-          <div className="text-justify min-h-32">{description}</div>
+          <div className="text-justif text-sm text-slate-400 min-h-20">{description}</div>
         </div>
       </div>
 
