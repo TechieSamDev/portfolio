@@ -19,7 +19,7 @@ const Intro = () => {
 
     <h5
       key="description"
-      className="lg:w-1/2 pt-3 text-sm md:text-base text-slate-500"
+      className="md:w-2/3 lg:w-1/2 pt-3 text-sm md:text-base text-slate-500"
     >
       I’m a software engineer specializing in building (and occasionally
       designing) exceptional digital experiences. Currently, I’m focused on
@@ -27,7 +27,7 @@ const Intro = () => {
     </h5>,
   ];
   return (
-    <div className="space-y-2 -mt-16">{introTexts.map((text) => text)}</div>
+    <div className="space-y-1">{introTexts.map((text) => text)}</div>
   );
 };
 

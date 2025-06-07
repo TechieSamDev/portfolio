@@ -1,10 +1,10 @@
 const PermaLinks = () => {
   return (
-    <ul className="m-auto grid md:grid-flow-col min-h-10 space-y-3 md:space-y-0">
+    <ul className="m-auto  min-h-10 flex flex-col space-y-2 sm:flex-row items-center justify-center">
       <li>
         <a
           href="#"
-          className="hover:text-secondary hover:text-lg transition-all"
+          className="hover:text-secondary hover:scale-110 hover:underline transition-all"
         >
           Home
         </a>
@@ -12,23 +12,16 @@ const PermaLinks = () => {
       <li>
         <a
           href="#about"
-          className="hover:text-secondary hover:text-lg transition-all"
+          className="hover:text-secondary hover:scale-110 hover:underline transition-all"
         >
           About
         </a>
       </li>
-      <li>
-        <a
-          href="#skills"
-          className="hover:text-secondary hover:text-lg transition-all"
-        >
-          Tech Stacks
-        </a>
-      </li>
+      
       <li>
         <a
           href="#projects"
-          className="hover:text-secondary hover:text-lg transition-all"
+          className="hover:text-secondary hover:scale-110 hover:underline transition-all"
         >
           Projects
         </a>
@@ -36,7 +29,7 @@ const PermaLinks = () => {
       <li>
         <a
           href="#contact"
-          className="hover:text-secondary hover:text-lg transition-all"
+          className="hover:text-secondary hover:scale-110 hover:underline transition-all"
         >
           Contact
         </a>

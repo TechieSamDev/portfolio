@@ -18,7 +18,7 @@ export const CONTACT_DETAILS = {
   },
   email: {
     platform: "Email",
-    address: `@${emailAddress.split(":").pop()}`,
+    address: `${emailAddress.split(":").pop()}`,
     link: emailAddress,
     icon: "",
   },
@@ -41,7 +41,7 @@ export const CONTACT_DETAILS = {
     icon: "",
   },
   telegram: {
-    platform: "Telegram",
+    platform: "@Telegram",
     address: "TechieSamDev",
     link: telegramLink,
     icon: "",

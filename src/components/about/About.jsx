@@ -4,17 +4,17 @@ import HeadShot from "./HeadShot";
 
 function About() {
   return (
-    <section id="about" className="max-w-5xl m-auto p border">
+    <section id="about" className="max-w-5xl md:px-10 px-5">
       <div className=" space-y-10 py-10">
         <div className="flex items-center">
-          <h5 className="text-2xl whitespace-nowrap pr-2 border px text-slate-200">
+          <h5 className="text-2xl whitespace-nowrap pr-2 px text-slate-200">
             <span className="text-sm text-accent px-2">01. </span> About me
           </h5>
           <HorizontalRule />
         </div>
 
         <div className="md:flex space-y-10">
-          <div className="space-y-3 border">
+          <div className="space-y-3">
             <div className="">
               {/* <div className="md:flex space-y-5 gap-5 md:px-12"></div> */}
               <p className="tracking-wide text-slate-400 px-2">
@@ -28,7 +28,7 @@ function About() {
               </p>
             </div>
             <div className="px-5 ">
-              <ul className="grid grid-cols-2 p-2 relative text-slate-400 gap-2 justify-evenly m-auto">
+              <ul className="grid grid-cols-2 p-2 md:max-w-80 relative text-slate-400 gap-2 justify-evenly">
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>React.js</li>
