@@ -13,8 +13,8 @@ function About() {
           <HorizontalRule />
         </div>
 
-        <div className="md:flex space-y-10">
-          <div className="space-y-3">
+        <div className="md:flex space-y-10 border">
+          <div className="space-y-3 border">
             <div className="">
               {/* <div className="md:flex space-y-5 gap-5 md:px-12"></div> */}
               <p className="tracking-wide text-slate-400 px-2">
@@ -40,7 +40,7 @@ function About() {
             </div>
           </div>
 
-          <div className="p-10">
+          <div className="flex items-center justify-center pb-10 px-20">
             <HeadShot />
           </div>
         </div>
