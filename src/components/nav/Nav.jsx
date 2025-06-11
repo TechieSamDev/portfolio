@@ -57,7 +57,7 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="bg-black w-max md:w-full md:rounded-none md:bg- md:border-0 md:border- md:justify-end md:bg-primary/50 p-3 px-7 z-20 md:h-20 items-center md:top-0 md:right-0 fixed -translate-x-1/2 left-1/2 bottom-8 flex gap-5 md:gap-10 rounded-full backdrop-filter backdrop-blur-lg border-2 border-accent/50">
+    <nav className="bg-black/40 w-max md:w-full md:rounded-none md:bg- md:border-0 md:border- md:justify-end md:bg-primary/50 p-3 px-7 z-20 md:h-20 items-center md:top-0 md:right-0 fixed -translate-x-1/2 left-1/2 bottom-8 flex gap-5 md:gap-10 rounded-full backdrop-filter backdrop-blur-lg border-2 border-accent/50">
       <motion.div
         whileInView="visible"
         initial="hidden"
@@ -76,7 +76,9 @@ const Nav = () => {
                 : ""
             }`}
           >
-            <span className="md:hidden block">{icon}</span>
+            <span className={`md:hidden block ${activeNav === href && "text-accent"}`}>
+              {icon}
+            </span>
             <span className="hidden md:block">
               <small className="text-accent">0{index + 1}.</small>{" "}
               <span className="text">{text}</span>

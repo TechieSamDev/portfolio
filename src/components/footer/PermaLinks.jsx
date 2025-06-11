@@ -1,6 +1,6 @@
 const PermaLinks = () => {
   return (
-    <ul className="m-auto  min-h-10 flex flex-col space-y-2 sm:flex-row items-center justify-center">
+    <ul className="m-auto  min-h-10 flex flex-col gap-5 sm:flex-row items-center justify-center">
       <li>
         <a
           href="#"

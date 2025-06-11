@@ -35,7 +35,7 @@ const Intro = () => {
 
       <div className="my-3">
         <motion.h1
-          className="md:text-6xl sm:text-5xl text-4xl font-bold text-slate-200"
+          className="md:text-6xl sm:text-5xl text-4xl font-bold text-slate-300"
           variants={itemVariants}
         >
           Samuel Abolade
