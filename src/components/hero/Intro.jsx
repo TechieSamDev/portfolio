@@ -1,33 +1,56 @@
-const Intro = () => {
-  const introTexts = [
-    <h5 key="greetings" className="text-sm text-accent ">
-      Hey, I'm
-    </h5>,
-    <div className="space">
-      <h1
-        key="name"
-        className="md:text-6xl sm:text-5xl text-4xl font-bold text-slate-200"
-      >
-        Samuel Abolade
-        {/* <small className="text-slate-500 text-sm font-light">Techie Sam</small> */}
-      </h1>
-      {/* <h3 key="intro-text" className="text-2xl font-medium tracking-tighter text-slate-300/70">
-        I build things that lives on the web.
-      </h3> */}
-      
-    </div>,
+import { motion } from "motion/react";
+const containerVariants = {
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.2,
+    },
+  },
+  hidden: {
+    opacity: 0,
+  },
+};
 
-    <h5
-      key="description"
-      className="md:w-2/3 lg:w-1/2 pt-3 text-sm md:text-base text-slate-500"
-    >
-      I’m a software engineer specializing in building (and occasionally
-      designing) exceptional digital experiences. Currently, I’m focused on
-      building accessible, human-centered products at Upstatement.
-    </h5>,
-  ];
+const itemVariants = {
+  hidden: { opacity: 0, y: 1 },
+  visible: { opacity: 1, y: 0 },
+  transition: {
+    duration: 0.6,
+    ease: "easeOut",
+  },
+};
+const Intro = () => {
   return (
-    <div className="space-y-1">{introTexts.map((text) => text)}</div>
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="space-y-"
+    >
+      <motion.h5 variants={itemVariants} className="text-sm text-accent ">
+        Hey, I'm
+      </motion.h5>
+
+      <div className="my-3">
+        <motion.h1
+          className="md:text-6xl sm:text-5xl text-4xl font-bold text-slate-200"
+          variants={itemVariants}
+        >
+          Samuel Abolade
+        </motion.h1>
+
+        <motion.h5
+          variants={itemVariants}
+          className="md:w-2/3 lg:w-1/2 pt-2 text-sm md:text-base text-slate-500"
+        >
+          I’m a software engineer specializing in building (and occasionally
+          designing) exceptional digital experiences. Currently, I’m focused on
+          building accessible, human-centered products at Upstatement.
+        </motion.h5>
+      </div>
+    </motion.div>
   );
 };
 
