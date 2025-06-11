@@ -68,6 +68,14 @@ export const TECHNOLOGIES = [
 
 export const PROJECTS = [
   {
+    name: "Heal Me  Non-profit Organization",
+    image: "/assets/heal-me-cover.png",
+    // gitHub: "https://github.com/techie-sam/quizlet",
+    // liveDemo: "https://heal-me-frontend.vercel.app",
+    description:
+      "A non-profit organization that helps orphaned children, hospital patients, new mothers, and individuals with disabilities. I focused on designing the parts of the website people interact with, and suggested ways to improve the backend.",
+  },
+  {
     name: "Baby FROG - $BFOWG",
     image: "/assets/bfwog-cover.png",
     // gitHub: "https://github.com/techie-sam/quizlet",
@@ -90,13 +98,5 @@ export const PROJECTS = [
     // gitHub: "https://github.com/techie-sam/cbt_react_app",
     description:
       "A Web3 project website redesigned to improve its look, usability, and overall user experience. I created a modern, user-friendly design that aligns with the project's vision and enhances user engagement",
-  },
-  {
-    name: "Heal Me  Non-profit Organization",
-    image: "/assets/heal-me-cover.png",
-    // gitHub: "https://github.com/techie-sam/quizlet",
-    // liveDemo: "https://heal-me-frontend.vercel.app",
-    description:
-      "A non-profit organization that helps orphaned children, hospital patients, new mothers, and individuals with disabilities. I focused on designing the parts of the website people interact with, and suggested ways to improve the backend.",
   },
 ];

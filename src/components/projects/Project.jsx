@@ -1,11 +1,26 @@
+import { motion } from "motion/react";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import LinkButton from "../utils/LinkButton";
 
+const variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { delay: 0.1, duration: 0.5 } },
+  viewport: { once: true },
+  transition: {
+    ease: "easeIn",
+  },
+};
 const Project = ({
   details: { image, name, description, liveDemo, gitHub },
 }) => {
   return (
-    <div className="bg-secondary hover:bg-secondary/20 border-2 border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-4">
+    <motion.div
+      whileInView="visible"
+      initial="hidden"
+      variants={variants}
+      viewport={{ once: true }}
+      className="bg-secondary hover:bg-secondary/20 border-2 border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-4"
+    >
       <div className="space-y-5">
         <a href={liveDemo} target="_blank">
           <img
@@ -18,7 +33,9 @@ const Project = ({
         </a>
         <div className="space-y-3">
           <h5 className="font-bold">{name}</h5>
-          <div className="text-justif text-sm text-slate-400 min-h-20">{description}</div>
+          <div className="text-justif text-sm text-slate-400 min-h-20">
+            {description}
+          </div>
         </div>
       </div>
 
@@ -30,7 +47,7 @@ const Project = ({
           rel="noreferrer"
         >
           See It Live {"  "}
-            <HiArrowTopRightOnSquare className="text-sm inline size-5 font-bold" />
+          <HiArrowTopRightOnSquare className="text-sm inline size-5 font-bold" />
         </LinkButton>
 
         {gitHub && (
@@ -44,7 +61,7 @@ const Project = ({
           </LinkButton>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
