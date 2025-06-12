@@ -7,18 +7,15 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  /* margin: 0, 1px, 4px, 1rem */
-  font-family: "Rubik", sans-serif;
-  /* @apply bg-primary text-slate-300
-     */
-  @apply text-slate-300;
-  background: rgba(14, 22, 42, 1);
-  /* background: radial-gradient(circle,
-      rgba(16, 33, 68, 1) 0%,
-      rgba(14, 22, 42, 1) 10%); */
+::selection {
+  @apply text-slate-300 bg-secondary;
 }
 
+body {
+  font-family: "Rubik", sans-serif;
+  background: rgba(14, 22, 42, 1);
+  @apply text-slate-300;
+}
 
 ul li::before {
   content: "▹";

@@ -33,9 +33,9 @@ const Intro = () => {
         Hey, I'm
       </motion.h5>
 
-      <div className="my-3">
+      <div className="my-3 space-y-2">
         <motion.h1
-          className="md:text-6xl sm:text-5xl text-4xl font-bold text-slate-300"
+          className="md:text-6xl sm:text-5xl text-4xl font-bold text-slate-200"
           variants={itemVariants}
         >
           Samuel Abolade
@@ -43,11 +43,11 @@ const Intro = () => {
 
         <motion.h5
           variants={itemVariants}
-          className="md:w-2/3 lg:w-1/2 pt-2 text-sm md:text-base text-slate-500"
+          className="md:w-2/3 lg:w-1/2 pt-2 text-sm md:text-base text-slate-400"
         >
-          I’m a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products at Upstatement.
+          I’m a web developer who builds clean, user-friendly websites. I work
+          with both Web2 and Web3 technologies, making the internet more
+          accessible and enjoyable for everyone.
         </motion.h5>
       </div>
     </motion.div>

@@ -32,8 +32,8 @@ const Project = ({
           />
         </a>
         <div className="space-y-3">
-          <h5 className="font-bold">{name}</h5>
-          <div className="text-justif text-sm text-slate-400 min-h-20">
+          <h5 className="font-bold md:text-xl">{name}</h5>
+          <div className="text-slate-400 min-h-28">
             {description}
           </div>
         </div>

@@ -13,6 +13,7 @@ const variants = {
   },
 };
 function About() {
+
   return (
     <section id="about" className="max-w-5xl md:px-10 px-5">
       <motion.div
@@ -33,17 +34,18 @@ function About() {
             <div className="">
               {/* <div className="md:flex space-y-5 gap-5 md:px-12"></div> */}
               <p className="tracking-wide text-slate-400 px-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, cum! Architecto, assumenda eligendi commodi corrupti
-                quasi repudiandae possimus non vel magni dolor iure, earum
-                totam, dolores recusandae incidunt cum molestias iusto.
-                Provident, fugiat modi. Suscipit neque iusto cum labore alias
-                nihil ratione repudiandae ipsam at! Distinctio atque culpa est!
-                Nesciunt!
+                Hey there! I’m Samuel, a Web developer who loves building clean,
+                user-friendly websites. I work with both Web2 and Web3
+                technologies, helping businesses and individuals create{" "}
+                <span className="text-slate-300">smooth digital experiences</span>. <br /> <br />
+                Aside coding, I look for ways to help my clients grow, whether
+                it’s improving their online presence, making their site easier
+                to use, or sharing useful tech insights.
               </p>
             </div>
             <div variants={variants} className="px-5 ">
-              <ul className="grid grid-cols-2 p-2 md:max-w-80 relative text-slate-400 gap-2 justify-evenly">
+              <p>Here are some tools I use:</p>
+              <ul className="grid grid-cols-2 p-2 md:max-w-80 relative text-slate-300 gap-2 justify-evenly">
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>React.js</li>

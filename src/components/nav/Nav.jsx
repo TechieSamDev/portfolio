@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import {
   HiMiniBriefcase,
   HiMiniChatBubbleOvalLeftEllipsis,
-  HiMiniCog,
   HiMiniHome,
   HiMiniUser,
 } from "react-icons/hi2";
@@ -16,13 +15,11 @@ const containerVariants = {
     x: 0,
     y: 0,
     transition: {
-      // delay: 0.2,
       duration: 0.2,
       staggerChildren: 0.2,
       delayChildren: 0.1,
     },
   },
-
 };
 
 const itemVariant = {
@@ -71,12 +68,15 @@ const Nav = () => {
             onClick={() => setActiveNav(href)}
             variants={itemVariant}
             className={`p-2 rounded-full ${
-              activeNav === href
-                ? "underline underline-offset-4 underline-red-500"
-                : ""
+              activeNav === href &&
+              "underline underline-offset-8 underline-red-500"
             }`}
           >
-            <span className={`md:hidden block ${activeNav === href && "text-accent"}`}>
+            <span
+              className={`md:hidden block ${
+                activeNav === href && "text-accent"
+              }`}
+            >
               {icon}
             </span>
             <span className="hidden md:block">
