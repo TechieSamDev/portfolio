@@ -1,8 +1,7 @@
 import CTA from "./CTA";
 import Intro from "./Intro";
-
 import ContactMenu from "./ContactMenu";
-import LinkButton from "../utils/LinkButton";
+
 const Hero = () => {
   return (
     <header

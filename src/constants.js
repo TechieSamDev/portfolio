@@ -70,6 +70,7 @@ export const PROJECTS = [
   {
     name: "Heal Me  Non-profit Organization",
     image: "/assets/heal-me-cover.png",
+    stacks: ["Next.js", "TailwindCSS", "TypeScript", "Node.js"],
     // gitHub: "https://github.com/techie-sam/quizlet",
     // liveDemo: "https://heal-me-frontend.vercel.app",
     description:

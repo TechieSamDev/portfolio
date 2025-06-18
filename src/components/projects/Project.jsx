@@ -11,7 +11,7 @@ const variants = {
   },
 };
 const Project = ({
-  details: { image, name, description, liveDemo, gitHub },
+  details: { image, name, description, liveDemo, gitHub, stacks },
 }) => {
   return (
     <motion.div
@@ -21,7 +21,7 @@ const Project = ({
       viewport={{ once: true }}
       className="bg-secondary hover:bg-secondary/20 border-2 border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-4"
     >
-      <div className="space-y-5">
+      <div className="space-y-5 w-full">
         <a href={liveDemo} target="_blank">
           <img
             src={image}
@@ -31,11 +31,19 @@ const Project = ({
             alt={name}
           />
         </a>
+        <div className="flex gap-2 flex-wrap">
+          {stacks?.map((stack) => (
+            <small
+              key={stack}
+              className="bg-slate text-slate-400 px-2 text-xs rounded-lg border border-slate-500 "
+            >
+              {stack}
+            </small>
+          ))}
+        </div>
         <div className="space-y-3">
           <h5 className="font-bold md:text-xl">{name}</h5>
-          <div className="text-slate-400 min-h-28">
-            {description}
-          </div>
+          <div className="text-slate-400 min-h-28">{description}</div>
         </div>
       </div>
 
