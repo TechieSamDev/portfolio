@@ -4,10 +4,10 @@ import HorizontalRule from "../utils/HorizontalRule";
 
 const Projects = () => {
   return (
-    <section id="projects" className="max-w-6xl px-5">
+    <section id="projects" className="max-w-6xl ">
       <div className="space-y-10 py-10">
         <div className="flex items-center">
-          <h2 className="text-xl whitespace-nowrap pr-2 px text-slate-200">
+          <h2 className="text-xl whitespace-nowrap pr-2 md:px-5 text-slate-200">
             <span className="text-sm text-accent px-2">02. </span> Projects I've
             built
           </h2>
