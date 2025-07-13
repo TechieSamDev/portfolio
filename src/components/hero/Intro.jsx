@@ -29,9 +29,9 @@ const Intro = () => {
       viewport={{ once: true }}
       className="space-y-"
     >
-      <motion.h5 variants={itemVariants} className="text-sm text-accent ">
+      <motion.small variants={itemVariants} className="text-sm text-accent ">
         Hey, I'm
-      </motion.h5>
+      </motion.small>
 
       <div className="my-3 space-y-2">
         <motion.h1
@@ -41,14 +41,14 @@ const Intro = () => {
           Samuel Abolade
         </motion.h1>
 
-        <motion.h5
+        <motion.p
           variants={itemVariants}
           className="md:w-2/3 lg:w-1/2 pt-2 text-sm md:text-base text-slate-400"
         >
-          I’m a web developer who builds clean, user-friendly websites. I work
-          with both Web2 and Web3 technologies, making the internet more
-          accessible and enjoyable for everyone.
-        </motion.h5>
+          A developer who works across both frontend and backend to build clean,
+          user-friendly websites and apps, making the internet more accessible
+          and enjoyable for everyone.
+        </motion.p>
       </div>
     </motion.div>
   );

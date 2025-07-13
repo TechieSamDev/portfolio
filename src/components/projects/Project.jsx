@@ -11,7 +11,7 @@ const variants = {
   },
 };
 const Project = ({
-  details: { image, name, description, liveDemo, gitHub, stacks },
+  details: { image, name, description, liveLink, gitHub, stacks },
 }) => {
   return (
     <motion.div
@@ -22,11 +22,12 @@ const Project = ({
       className="bg-secondary hover:bg-secondary/20 border-2 border-slate-600 p-5 rounded-lg transition-all duration-150 space-y-4"
     >
       <div className="space-y-5 w-full">
-        <a href={liveDemo} target="_blank">
+        <a aria-label={`View ${name} live`} href={liveLink} target="_blank">
           <img
             src={image}
-            height="250"
-            width="350"
+            width="982"
+            height="586"
+            loading="lazy"
             className="w-full h-full rounded-lg border"
             alt={name}
           />
@@ -42,7 +43,7 @@ const Project = ({
           ))}
         </div>
         <div className="space-y-3">
-          <h5 className="font-bold md:text-xl">{name}</h5>
+          <h3 className="font-bold md:text-xl">{name}</h3>
           <div className="text-slate-400 min-h-28">{description}</div>
         </div>
       </div>
@@ -50,7 +51,7 @@ const Project = ({
       <div className="py-5 space-x-5">
         <LinkButton
           variant="accent"
-          href={liveDemo}
+          href={liveLink}
           target={name === "Portfolio Website" ? null : "_blank"}
           rel="noreferrer"
         >

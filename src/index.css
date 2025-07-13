@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import './fonts.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +17,7 @@ body {
   @apply text-slate-300;
 }
 
-ul li::before {
+#skills li::before {
   content: "▹";
   position: absolute;
   @apply text-accent -ml-3;

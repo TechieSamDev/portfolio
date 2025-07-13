@@ -65,6 +65,7 @@ const Nav = () => {
           <motion.a
             key={href}
             href={href}
+            aria-label={text}
             onClick={() => setActiveNav(href)}
             variants={itemVariant}
             className={`p-2 rounded-full ${

@@ -1,9 +1,10 @@
-import { CONTACT_DETAILS } from '../../constants';
+import { CONTACT_DETAILS } from "../../constants";
 
 const ContactLinks = () => {
   return (
     <div className="flex m-auto justify-center gap-5">
       <a
+        aria-label="Contact via Twitter"
         href={CONTACT_DETAILS.twitter.link}
         rel="noreferrer"
         target="_blank"
@@ -21,6 +22,7 @@ const ContactLinks = () => {
         </svg>
       </a>
       <a
+        aria-label="Contact via Linkedin"
         href={CONTACT_DETAILS.linkedin.link}
         rel="noreferrer"
         target="_blank"
@@ -38,6 +40,7 @@ const ContactLinks = () => {
         </svg>
       </a>
       <a
+      aria-label="Contact via Github"
         href={CONTACT_DETAILS.github.link}
         rel="noreferrer"
         target="_blank"

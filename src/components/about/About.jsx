@@ -13,7 +13,6 @@ const variants = {
   },
 };
 function About() {
-
   return (
     <section id="about" className="max-w-5xl md:px-10 px-5">
       <motion.div
@@ -24,9 +23,9 @@ function About() {
         className=" space-y-10 py-10"
       >
         <div variants={variants} className="flex items-center">
-          <h5 className="text-2xl whitespace-nowrap pr-2 px text-slate-200">
+          <h2 className="text-2xl whitespace-nowrap pr-2 px text-slate-200">
             <span className="text-sm text-accent px-2">01. </span> About me
-          </h5>
+          </h2>
           <HorizontalRule />
         </div>
         <div className="md:flex md:ml-10  space-y-10">
@@ -34,18 +33,19 @@ function About() {
             <div className="">
               {/* <div className="md:flex space-y-5 gap-5 md:px-12"></div> */}
               <p className="tracking-wide text-slate-400 px-2">
-                Hey there! I’m Samuel, a Web developer who loves building clean,
-                user-friendly websites. I work with both Web2 and Web3
-                technologies, helping businesses and individuals create{" "}
-                <span className="text-slate-300">smooth digital experiences</span>. <br /> <br />
-                Aside coding, I look for ways to help my clients grow, whether
-                it’s improving their online presence, making their site easier
-                to use, or sharing useful tech insights.
+                Hi, I’m Samuel, a <b>Full-Stack Developer</b> with a focus on
+                building clean, user-friendly websites and apps. I work with
+                both Web2 and Web3 technologies, helping individuals, startups,
+                and businesses create smooth, functional digital experiences.{" "}
+                <br />
+                Beyond just writing code, I care about making products better,
+                whether on improving usability, boosting online presence, or
+                sharing ideas that help clients grow.
               </p>
             </div>
             <div variants={variants} className="px-5 ">
               <p>Here are some tools I use:</p>
-              <ul className="grid grid-cols-2 p-2 md:max-w-80 relative text-slate-300 gap-2 justify-evenly">
+              <ul id="skills" className="grid grid-cols-2 p-2 md:max-w-80 relative text-slate-300 gap-2 justify-evenly">
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>React.js</li>

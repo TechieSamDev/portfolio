@@ -9,9 +9,9 @@ const Contact = () => {
     <section id="contact" className="max-w-6xl m-auto">
       <div className="md:px-10 space-y-10 px-3 py-5">
         <div className="flex items-center ">
-          <h5 className="text-xl whitespace-nowrap pr-2 px text-slate-200">
+          <h2 className="text-xl whitespace-nowrap pr-2 px text-slate-200">
             <span className="text-sm text-accent px-2">03. </span> Get in touch
-          </h5>
+          </h2>
           <HorizontalRule />
         </div>
 

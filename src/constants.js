@@ -68,33 +68,27 @@ export const TECHNOLOGIES = [
 
 export const PROJECTS = [
   {
-    name: "Heal Me  Non-profit Organization",
-    image: "/assets/heal-me-cover.png",
+    name: "L.O.V.E Foundation - (Formerly HEAL ME)",
+    image: "/assets/heal-me-cover.webp",
     stacks: ["Next.js", "TailwindCSS", "TypeScript", "Node.js"],
     // gitHub: "https://github.com/techie-sam/quizlet",
-    // liveDemo: "https://heal-me-frontend.vercel.app",
+    liveLink: "https://lovefoundationafrica.org",
     description:
-      "A non-profit organization that helps orphaned children, hospital patients, new mothers, and individuals with disabilities. I focused on designing the parts of the website people interact with, and suggested ways to improve the backend.",
+      "L.O.V.E Foundation is a platform that helps people support vulnerable groups like orphaned children, hospital patients, new mothers, and individuals with disabilities. It’s made for donors, volunteers, and those in need of help, bringing them together in one place to give, receive support, or offer time and care.",
   },
-{
-name: "Throst",
-image: "/assets/throst",
-description: "Throst is an app that makes it easy to split expenses with friends during group activities. <br/>
-
-You can create a group for things like trips or hangouts, invite your friends, and add what was bought. For each item, you choose who paid and who used it. Throst then splits the cost and shows how much everyone owes."
-},
   {
-    name: "$BSC - Building Strong Community",
-    image: "/assets/bsc-cover.png",
-    liveDemo: "https://bsc.vercel.app",
+    name: "Throst – Split expenses with friends.",
+    image: "/assets/throst-cover.webp",
+    stacks: ["React.js", "TailwindCSS", "TypeScript", "Node.js"],
+    liveLink: "https://throst.vercel.app",
     description:
-      "A Web3 project website made to help users easily find everything they need. It includes the project's smart contract address, contact links, a decentralized exchange (DEX), and a simple guide on how to buy the token.",
+      "Throst is an app that makes it easy to split expenses with friends during group activities. Users can create a group for things like trips, hangouts, or shared events, invite the people involved, and add each item that was paid for, including who paid and who shared in the cost. Throst then splits the expense fairly and shows how much each person owes.",
   },
 
   {
     name: "$FLOOF",
-    liveDemo: "https://floofcto.vercel.app",
-    image: "/assets/floof-cover.png",
+    image: "/assets/floof-cover.webp",
+    liveLink: "https://floofcto.vercel.app",
     // gitHub: "https://github.com/techie-sam/cbt_react_app",
     description:
       "A Web3 project website redesigned to improve its look, usability, and overall user experience. I created a modern, user-friendly design that aligns with the project's vision and enhances user engagement",
