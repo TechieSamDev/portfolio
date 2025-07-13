@@ -76,14 +76,13 @@ export const PROJECTS = [
     description:
       "A non-profit organization that helps orphaned children, hospital patients, new mothers, and individuals with disabilities. I focused on designing the parts of the website people interact with, and suggested ways to improve the backend.",
   },
-  {
-    name: "Baby FROG - $BFOWG",
-    image: "/assets/bfwog-cover.png",
-    // gitHub: "https://github.com/techie-sam/quizlet",
-    liveDemo: "https://bfwog.vercel.app",
-    description:
-      "A fresh and inviting landing page for $BabyFwog that puts everything visitors need right at their fingertips. No hunting, no hassle, just clear access to token buying guides, smart contract details, and the project roadmap, ",
-  },
+{
+name: "Throst",
+image: "/assets/throst",
+description: "Throst is an app that makes it easy to split expenses with friends during group activities. <br/>
+
+You can create a group for things like trips or hangouts, invite your friends, and add what was bought. For each item, you choose who paid and who used it. Throst then splits the cost and shows how much everyone owes."
+},
   {
     name: "$BSC - Building Strong Community",
     image: "/assets/bsc-cover.png",
