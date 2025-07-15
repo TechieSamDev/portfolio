@@ -1,13 +1,20 @@
 import HorizontalRule from "../utils/HorizontalRule";
-import { CONTACT_DETAILS as CONTACT_DETAILS_RAW } from "../../constants";
 import ContactInputs from "./ContactInputs";
-import LinkButton from "../utils/LinkButton";
+import { useEffect } from "react";
 
 const Contact = () => {
-
+  useEffect(() => {
+    const head = document.querySelector("head");
+    const script = document.createElement("script");
+    script.setAttribute(
+      "src",
+      "https://assets.calendly.com/assets/external/widget.js"
+    );
+    head.appendChild(script);
+  });
   return (
     <section id="contact" className="max-w-6xl m-auto">
-      <div className="md:px-10 space-y-10 px-3 py-5">
+      <div className="md:px-10 space-y-10 py-5">
         <div className="flex items-center ">
           <h2 className="text-xl whitespace-nowrap pr-2 px text-slate-200">
             <span className="text-sm text-accent px-2">03. </span> Get in touch
@@ -15,9 +22,16 @@ const Contact = () => {
           <HorizontalRule />
         </div>
 
-        <div className="md:flex max-w-4xl p-5 m-auto space-y-5 md:space-y-0 gap-5">
-          <div className="md:w-3/5">
+        <div className="md:flex max-w-5xl p-5 m-auto space-y-16 md:space-y-0 gap-10">
+          <div className="md:w-1/2">
             <ContactInputs />
+          </div>
+          <div className="space-y-5 md:w-1/2 h-[500px] w-full">
+            <h3 className="text-accent font-bold">Book a Free Session</h3>
+            <div
+              className="calendly-inline-widget w-full h-full rounded-md"
+              data-url="https://calendly.com/techiesam-dev?primary_color=#50d3ca"
+            ></div>
           </div>
 
           {/* <div className="border flex-1">
