@@ -86,11 +86,20 @@ export const PROJECTS = [
   },
 
   {
+    name: "Mintify",
+    image: "/assets/mintify-cover.webp",
+    liveLink: "https://mintlfy.vercel.app",
+    // gitHub: "https://github.com/techie-sam/cbt_react_app",
+    description:
+      "Mintify is an NFT project site that introduces users to the collection and guides them through the minting process. It shows the current minting status, explains how to buy, and includes sections like the roadmap, team, and project story. The design is simple and user-friendly, making it easy for anyone to get involved.",
+  },
+
+  {
     name: "$FLOOF",
     image: "/assets/floof-cover.webp",
     liveLink: "https://floofcto.vercel.app",
     // gitHub: "https://github.com/techie-sam/cbt_react_app",
     description:
-      "A Web3 project website redesigned to improve its look, usability, and overall user experience. I created a modern, user-friendly design that aligns with the project's vision and enhances user engagement",
+      "$FLOOF is a fun meme coin built on the Solana network, created to bring people together through community and good vibes. The site explains what the token is about, how to get started, and guides users through buying it, from setting up a wallet to swapping SOL for FLOOF. Everything is simple and friendly, making it easy for anyone to join the FLOOF community.",
   },
 ];
