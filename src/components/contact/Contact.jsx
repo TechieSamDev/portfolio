@@ -4,14 +4,15 @@ import { useEffect } from "react";
 
 const Contact = () => {
   useEffect(() => {
-    const head = document.querySelector("head");
+    if (document.getElementById("calendly-widget-script")) return;
+
     const script = document.createElement("script");
-    script.setAttribute(
-      "src",
-      "https://assets.calendly.com/assets/external/widget.js"
-    );
-    head.appendChild(script);
-  });
+    script.id = "calendly-widget-script";
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.head.appendChild(script);
+  }, []);
+
   return (
     <section id="contact" className="max-w-6xl m-auto">
       <div className="md:px-10 space-y-10 py-5">
