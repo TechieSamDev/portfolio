@@ -48,6 +48,7 @@ const ContactInputs = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="space-y-5">
+
         {/* FullName */}
         <p className="text-accent font-bold">Send Me a message</p>
         <div className="relative mt-4">
