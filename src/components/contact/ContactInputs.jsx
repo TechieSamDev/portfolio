@@ -24,7 +24,7 @@ const ContactInputs = () => {
     }
 
     setIsSubmitting(true);
-    fetch("https://techiesamm.vercel.app/", {
+    fetch("https://api.techiesam.tech/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -102,7 +102,10 @@ const ContactInputs = () => {
             disabled={isSubmitting}
           >
             {isSubmitting ? (
-              <span class="animate-spin rounded-full block size-6 border-2 m-auto border-r-slate-500"></span>
+              <div className="flex w-28 m-auto">
+                <span class="animate-spin rounded-full inline-block size-4 border-2 m-auto border-r-slate-500"></span>
+                <span className="text-slate-500">Sending...</span>
+              </div>
             ) : (
               "Send Message"
             )}
