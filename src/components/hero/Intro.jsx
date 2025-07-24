@@ -27,7 +27,7 @@ const Intro = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="space-y-"
+      className=""
     >
       <motion.small variants={itemVariants} className="text-sm text-accent ">
         Hey, I'm
@@ -45,9 +45,8 @@ const Intro = () => {
           variants={itemVariants}
           className="md:w-2/3 lg:w-1/2 pt-2 text-sm md:text-base text-slate-400"
         >
-          A developer who works across both frontend and backend to build clean,
-          user-friendly websites and apps, making the internet more accessible
-          and enjoyable for everyone.
+          I build secure and easy-to-use websites/apps that keep users
+          happy, making the internet a safer, friendlier place for everyone.
         </motion.p>
       </div>
     </motion.div>

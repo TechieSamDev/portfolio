@@ -34,18 +34,21 @@ function About() {
               {/* <div className="md:flex space-y-5 gap-5 md:px-12"></div> */}
               <p className="tracking-wide text-slate-400 px-2">
                 Hi, I’m Samuel, a <b>Full-Stack Developer</b> with a focus on
-                building clean, user-friendly websites and apps. I work with
-                both Web2 and Web3 technologies, helping individuals, startups,
-                and businesses create smooth, functional digital experiences.{" "}
-                <br />
+                building clean, secure, user-friendly websites and apps. I work
+                with both Web2 and Web3 technologies, helping individuals,
+                startups, and businesses create smooth, functional digital
+                experiences. <br />
                 Beyond just writing code, I care about making products better,
                 whether on improving usability, boosting online presence, or
-                sharing ideas that help clients grow.
+                sharing ideas that help clients/business grow.
               </p>
             </div>
             <div variants={variants} className="px-5 ">
               <p>Here are some tools I use:</p>
-              <ul id="skills" className="grid grid-cols-2 p-2 md:max-w-80 relative text-slate-300 gap-2 justify-evenly">
+              <ul
+                id="skills"
+                className="grid grid-cols-2 p-2 md:max-w-80 relative text-slate-300 gap-2 justify-evenly"
+              >
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>React.js</li>
