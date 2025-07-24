@@ -11,7 +11,7 @@ const App = () => {
     <>
       <Toaster
         limit={3}
-        position="top-right"
+        position="center"
         toastOptions={{
           className:
             "border border-secondary bg-white text-gray-900 rounded shadow-md ",
