@@ -46,7 +46,7 @@ const Intro = () => {
           className="md:w-2/3 lg:w-1/2 pt-2 text-sm md:text-base text-slate-400"
         >
           I build secure and easy-to-use websites/apps that keep users
-          happy, making the internet a safer, friendlier place for everyone.
+          happy, making the internet a safer and friendlier place for everyone.
         </motion.p>
       </div>
     </motion.div>
