@@ -33,7 +33,7 @@ function About() {
             <div className="">
               {/* <div className="md:flex space-y-5 gap-5 md:px-12"></div> */}
               <p className="tracking-wide text-slate-400 px-2">
-                Hi, I’m Samuel, a <b>Front-End Developer</b> with focus on
+                Hi, I’m Samuel, a Front-End Developer with focus on
                 building clean, secure, user-friendly websites and apps. I work
                 with both Web2 and Web3 technologies, helping individuals,
                 startups, and businesses create smooth, functional digital
