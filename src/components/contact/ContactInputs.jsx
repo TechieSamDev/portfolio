@@ -94,7 +94,6 @@ const ContactInputs = () => {
             onChange={(e) => setMessage(e.target.value?.trim())}
           ></textarea>
         </div>
-        <button type="button" onClick={() => toast.error("Hello")}>Test</button>
         <div>
           <button
             type="submit"

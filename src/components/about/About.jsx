@@ -54,7 +54,7 @@ function About() {
                 <li>React.js</li>
                 <li>Next.js</li>
                 <li>TailwindCSS</li>
-                <li> Node.js </li>
+                <li>Node.js </li>
                 <li>WordPress Dev.</li>
               </ul>
             </div>

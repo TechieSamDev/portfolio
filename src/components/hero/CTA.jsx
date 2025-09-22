@@ -1,12 +1,10 @@
 import LinkButton from "../utils/LinkButton";
-
 const CTA = () => {
   return (
     <div className="flex gap-5">
       <LinkButton
         variant="accent"
-        href="/assets/001Abolade-Samuel(Techie-Sam)-Resume.pdf"
-        download="001Abolade-Samuel(Techie-Sam)-Resume.pdf"
+        href="https://docs.google.com/document/d/1fY9RJcjE2hwmaMxjW6VdtZZLvV-shTzRRZkJrx-zYbo/export?format=pdf"
         className="border border-accent text-accent py-3 px-4 rounded-lg transition duration outline-none flex items-center  focus:bg-accent/50 focus:text-slate-100"
       >
         Get Resume
