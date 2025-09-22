@@ -90,8 +90,7 @@ const Nav = () => {
       <div className="hidden md:block">
         <LinkButton
           variant="accent"
-          href="/assets/001Abolade-Samuel-Resume.pdf"
-          download="001Abolade-Samuel-(Techie_Sam)-Resume.pdf"
+          href="https://docs.google.com/document/d/1fY9RJcjE2hwmaMxjW6VdtZZLvV-shTzRRZkJrx-zYbo/export?format=pdf"
           className="border border-accent text-accent py-2 px-4 text-sm rounded-lg transition duration outline-none flex items-center  focus:bg-accent/50 focus:text-slate-100"
         >
           Get Resume
