@@ -68,21 +68,29 @@ export const TECHNOLOGIES = [
 
 export const PROJECTS = [
   {
-    name: "L.O.V.E Foundation - (Formerly HEAL ME)",
+    name: "CarBnB",
+    image: "/assets/heal-me-cover.webp",
+    stacks: ["Next.js", "TailwindCSS", "Node.js"],
+    description:
+      ".",
+  },
+  {
+    name: "Throst - Expense Split App",
+    image: "/assets/throst-cover.webp",
+    stacks: ["React.js", "TailwindCSS", "TypeScript", "Node.js"],
+    liveLink: "https://throst.vercel.app",
+    description:
+      "Throst is an app that makes it easy to split expenses with friends during group activities. Users can create a group for things like trips, hangouts, or shared events, invite the people involved, and add each item that was paid for, including who paid and who shared in the cost. Throst then splits the expense fairly and shows how much each person owes.",
+  },
+
+  {
+    name: "Heal Me",
     image: "/assets/heal-me-cover.webp",
     stacks: ["Next.js", "TailwindCSS", "TypeScript", "Node.js"],
     // gitHub: "https://github.com/techie-sam/quizlet",
     liveLink: "https://lovefoundationafrica.org",
     description:
       "L.O.V.E Foundation is a platform that helps people support vulnerable groups like orphaned children, hospital patients, new mothers, and individuals with disabilities. It’s made for donors, volunteers, and those in need of help, bringing them together in one place to give, receive support, or offer time and care.",
-  },
-  {
-    name: "Throst – Split expenses with friends.",
-    image: "/assets/throst-cover.webp",
-    stacks: ["React.js", "TailwindCSS", "TypeScript", "Node.js"],
-    liveLink: "https://throst.vercel.app",
-    description:
-      "Throst is an app that makes it easy to split expenses with friends during group activities. Users can create a group for things like trips, hangouts, or shared events, invite the people involved, and add each item that was paid for, including who paid and who shared in the cost. Throst then splits the expense fairly and shows how much each person owes.",
   },
 
   {
@@ -92,14 +100,5 @@ export const PROJECTS = [
     // gitHub: "https://github.com/techie-sam/cbt_react_app",
     description:
       "Mintify is an NFT project site that introduces users to the collection and guides them through the minting process. It shows the current minting status, explains how to buy, and includes sections like the roadmap, team, and project story. The design is simple and user-friendly, making it easy for anyone to get involved.",
-  },
-
-  {
-    name: "$FLOOF",
-    image: "/assets/floof-cover.webp",
-    liveLink: "https://floofcto.vercel.app",
-    // gitHub: "https://github.com/techie-sam/cbt_react_app",
-    description:
-      "$FLOOF is a fun meme coin built on the Solana network, created to bring people together through community and good vibes. The site explains what the token is about, how to get started, and guides users through buying it, from setting up a wallet to swapping SOL for FLOOF. Everything is simple and friendly, making it easy for anyone to join the FLOOF community.",
   },
 ];
