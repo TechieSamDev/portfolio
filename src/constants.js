@@ -68,12 +68,14 @@ export const TECHNOLOGIES = [
 
 export const PROJECTS = [
   {
-    name: "CarBnB",
+    name: "CarBnB - Car Hiring",
     image: "/assets/heal-me-cover.webp",
+liveLink: "https://carbnb-prod.vercel.app",
     stacks: ["Next.js", "TailwindCSS", "Node.js"],
     description:
       ".",
   },
+
   {
     name: "Throst - Expense Split App",
     image: "/assets/throst-cover.webp",
