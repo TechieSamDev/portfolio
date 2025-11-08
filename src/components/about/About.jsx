@@ -37,7 +37,7 @@ function About() {
                 clean, secure, user-friendly websites and apps. I work with both
                 Web2 and Web3 technologies, helping individuals, startups, and
                 businesses create smooth, functional digital experiences. <br />
-                Beyond just writing code, I care about making things better
+                Beyond just writing code, I care about making products better
                 through user feedback, because I believe the best products grow
                 by listening to people, learning from them, and improving with
                 every iteration.
