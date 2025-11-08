@@ -33,14 +33,14 @@ function About() {
             <div className="">
               {/* <div className="md:flex space-y-5 gap-5 md:px-12"></div> */}
               <p className="tracking-wide text-slate-400 px-2">
-                Hi, I’m Samuel, a Full-Stack Developer with focus on
-                building clean, secure, user-friendly websites and apps. I work
-                with both Web2 and Web3 technologies, helping individuals,
-                startups, and businesses create smooth, functional digital
-                experiences. <br />
-                Beyond just writing code, I care about making products better,
-                whether on improving usability, boosting online presence, or
-                sharing ideas that help clients/business grow.
+                Hi, I’m Samuel, a Full-Stack Developer with focus on building
+                clean, secure, user-friendly websites and apps. I work with both
+                Web2 and Web3 technologies, helping individuals, startups, and
+                businesses create smooth, functional digital experiences. <br />
+                Beyond just writing code, I care about making things better
+                through user feedback, because I believe the best products grow
+                by listening to people, learning from them, and improving with
+                every iteration.
               </p>
             </div>
             <div variants={variants} className="px-5 ">
@@ -54,8 +54,9 @@ function About() {
                 <li>React.js</li>
                 <li>Next.js</li>
                 <li>TailwindCSS</li>
-                <li>Node.js </li>
-                <li>WordPress Dev.</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>WordPress</li>
               </ul>
             </div>
           </div>
