@@ -12,7 +12,7 @@ const Footer = () => {
         <ContactLinks />
         <div className="text-center mt-4">
           <small>
-            &copy; Samuel Abolade <b>Techie Sam</b> - 2025. All right reserved.
+            &copy; Samuel Abolade <b>Techie Sam</b> - 2026. All right reserved.
           </small>
         </div>
       </div>
