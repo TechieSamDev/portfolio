@@ -2,7 +2,7 @@ import React from "react";
 import { CONTACT_DETAILS } from "../../constants";
 const ContactMenu = () => {
   return (
-    <div className="absolute left-8 flex justify-end md:right-12 right-0 bottom-[45%] inset-x-auto">
+    <div className="absolute left-8 flex justify-end md:right-12 right-0 bottom-[55%] inset-x-auto">
       <div className="fixed flex-col flex gap-5  px-2 py-4 rounded bg-slate-500 shadow">
         <div className="hidden md:block min-h-16 bg-slate-300 w-1 m-auto "></div>
         <a
