@@ -3,9 +3,9 @@ const linkedinAddress = "https://www.linkedin.com/in/TechieSamDev";
 const twitterAddress = "https://twitter.com/TechieSamDev";
 const githubAddress = "https://github.com/TechieSamDev";
 const whatsappLink =
-  "https://wa.me/+2349061918327?text=Hey Techie Sam, I wanted to reach out and ...";
+  "https://wa.me/+2349061918327?text=Hey Techie Sam, I am reaching out ...";
 const telegramLink =
-  "https://t.me/TechieSam?start=Hey_Techie_Sam_I_wanted to reach out and ...";
+  "https://t.me/TechieSam?start=Hey_Techie_Sam_I_wanted to  ...";
 
 const emailAddress = "mailto:techiesam.dev@gmail.com";
 
