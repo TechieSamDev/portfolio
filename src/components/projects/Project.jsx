@@ -32,6 +32,12 @@ const Project = ({
             alt={name}
           />
         </a>
+
+        <div className="space-y-3">
+          <h3 className="font-bold md:text-xl">{name}</h3>
+          <div className="text-slate-400 min-h-28">{description}</div>
+        </div>
+
         <div className="flex gap-2 flex-wrap">
           {stacks?.map((stack) => (
             <small
@@ -41,10 +47,6 @@ const Project = ({
               {stack}
             </small>
           ))}
-        </div>
-        <div className="space-y-3">
-          <h3 className="font-bold md:text-xl">{name}</h3>
-          <div className="text-slate-400 min-h-28">{description}</div>
         </div>
       </div>
 
