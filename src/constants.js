@@ -73,7 +73,7 @@ export const PROJECTS = [
     liveLink: "https://carbnb-prod.vercel.app",
     stacks: ["Next.js", "TailwindCSS", "Node.js"],
     description:
-      "CarBnB is a car rental app that for users to find and book vehicles. Users can browse available cars, view details such as price and availability, make reservations, and manage their bookings all in one place. The platform includes separate interfaces for regular users and administrators, allowing users to handle their rentals while administrators can manage vehicles, reservations e.t.c.",
+      "CarBnB is a car rental application that allows users to find and book vehicles with ease. Users can browse available cars, view details such as pricing and availability, make reservations, and manage their bookings in one place. The platform provides separate interfaces for users and administrators, enabling customers to manage their rentals while administrators handle vehicles, reservations, and overall system management.",
   },
 
   {
@@ -82,7 +82,7 @@ export const PROJECTS = [
     stacks: ["React.js", "TailwindCSS", "TypeScript", "Node.js"],
     liveLink: "https://throst.vercel.app",
     description:
-      "Throst is an app that makes it easy to split expenses with friends during group activities. Users can create a group for things like trips, hangouts, or shared events, invite the people involved, and add each item that was paid for, including who paid and who shared in the cost. Throst then splits the expense and shows how much each person owes.",
+      "Throst is an application that makes it easy to split expenses with friends during group activities. Users can create groups for trips, hangouts, or shared events, invite participants, and add expenses with details of who paid and who shared in the cost. Throst then automatically calculates and shows how much each person owes based on the agreed split.",
   },
 
   {
@@ -91,7 +91,7 @@ export const PROJECTS = [
     stacks: ["Next.js", "TailwindCSS", "TypeScript", "Node.js"],
     liveLink: "https://lovefoundationafrica.org",
     description:
-      "Heal Me is a platform that helps people support vulnerable groups like orphaned children, hospital patients, new mothers, and individuals with disabilities. It’s made for donors, volunteers, and those in need of help, bringing them together in one place to give, receive support, or offer time and care.",
+      "Heal Me is a platform designed to support vulnerable groups such as orphaned children, hospital patients, new mothers, and individuals with disabilities. It connects donors, volunteers, and people in need in one place, making it easy to give, receive support, or offer time and care.",
   },
 
   {
