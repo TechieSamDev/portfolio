@@ -73,7 +73,7 @@ export const PROJECTS = [
     liveLink: "https://carbnb-prod.vercel.app",
     stacks: ["Next.js", "TailwindCSS", "Node.js"],
     description:
-      "CarBnB is a car rental application that allows users to find and book vehicles with ease. Users can browse available cars, view details such as pricing and availability, make reservations, and manage their bookings in one place. The platform provides separate interfaces for users and administrators, enabling customers to manage their rentals while administrators handle vehicles, reservations, and overall system management.",
+      "CarBnB is a car rental platform designed to make booking and managing vehicles simple for both customers and business owners. Customers can browse available cars, view pricing and availability, and make reservations online, either as soft reservations or confirmed bookings. Business owners can easily update car details, track reservations, and manage orders, reducing double bookings and improving customer satisfaction.",
   },
 
   {
