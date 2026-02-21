@@ -86,19 +86,19 @@ export const PROJECTS = [
   },
 
   {
+    name: "Moar Market – Adaptive DeFi Interface",
+    image: "/assets/moar-market-cover.gif",
+    liveLink: "#",
+    description:
+      'Moar Market is a DeFi interface designed to make lending and borrowing on the Aptos blockchain intuitive for all users. Recognizing that technical jargon often scares away beginners, I built a "Dual-Mode" experience. Users can toggle between "Earn" (a simplified, bank-like view for passive income) and "Boost" (an advanced view for leverage and trading strategies).',
+  },
+
+  {
     name: "Heal Me - Charity Platform",
     image: "/assets/heal-me-cover.webp",
     stacks: ["Next.js", "TailwindCSS", "TypeScript", "Node.js"],
     liveLink: "https://lovefoundationafrica.org",
     description:
       "Heal Me is a platform designed to support vulnerable groups such as orphaned children, hospital patients, new mothers, and individuals with disabilities. It connects donors, volunteers, and people in need in one place, making it easy to give, receive support, or offer time and care.",
-  },
-
-  {
-    name: "Moar Market – Adaptive DeFi Interface",
-    image: "/assets/moar-market-cover.gif",
-    liveLink: "#",
-    description:
-      'Moar Market is a DeFi interface designed to make lending and borrowing on the Aptos blockchain intuitive for all users. Recognizing that technical jargon often scares away beginners, I built a "Dual-Mode" experience. Users can toggle between "Earn" (a simplified, bank-like view for passive income) and "Boost" (an advanced view for leverage and trading strategies).',
   },
 ];
