@@ -96,7 +96,7 @@ export const PROJECTS = [
 
   {
     name: "Moar Market – Adaptive DeFi Interface",
-    image: "/assets/moar-market-cover.webp",
+    image: "/assets/moar-market-cover.gif",
     liveLink: "#",
     description:
       'Moar Market is a DeFi interface designed to make lending and borrowing on the Aptos blockchain intuitive for all users. Recognizing that technical jargon often scares away beginners, I built a "Dual-Mode" experience. Users can toggle between "Earn" (a simplified, bank-like view for passive income) and "Boost" (an advanced view for leverage and trading strategies).',
