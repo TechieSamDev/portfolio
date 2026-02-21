@@ -95,10 +95,10 @@ export const PROJECTS = [
   },
 
   {
-    name: "Mintify - NFT Minting Site",
-    image: "/assets/mintify-cover.webp",
-    liveLink: "https://mintlfy.vercel.app",
+    name: "Moar Market – Adaptive DeFi Interface",
+    image: "/assets/moar-market-cover.webp",
+    liveLink: "#",
     description:
-      "Mintify is a Web3 NFT project that introduces users to the collection and guides them through the minting process. It shows the current minting status, explains how to buy, and includes sections like the roadmap, team, and project story. The design is simple and user-friendly, making it easy for anyone to get involved.",
+      'Moar Market is a DeFi interface designed to make lending and borrowing on the Aptos blockchain intuitive for all users. Recognizing that technical jargon often scares away beginners, I built a "Dual-Mode" experience. Users can toggle between "Earn" (a simplified, bank-like view for passive income) and "Boost" (an advanced view for leverage and trading strategies).',
   },
 ];
