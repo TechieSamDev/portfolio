@@ -40,6 +40,12 @@ const Intro = () => {
         >
           Samuel Abolade
         </motion.h1>
+        <motion.p
+          variants={itemVariants}
+          className="text-accent font-medium text-lg"
+        >
+          aka Techie Sam
+        </motion.p>
 
         <motion.p
           variants={itemVariants}
