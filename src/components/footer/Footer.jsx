@@ -1,5 +1,5 @@
-import ContactLinks from './ContactLinks';
-import PermaLinks from './PermaLinks';
+import ContactLinks from "./ContactLinks";
+import PermaLinks from "./PermaLinks";
 
 const Footer = () => {
   return (

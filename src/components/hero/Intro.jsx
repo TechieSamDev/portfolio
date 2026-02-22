@@ -51,7 +51,8 @@ const Intro = () => {
           variants={itemVariants}
           className="md:w-2/3 lg:w-1/2 pt-2 text-sm md:text-base text-slate-400"
         >
-          I build apps and websites that are secure, reliable, and easy to use for everyone.
+          I build apps and websites that are secure, reliable, and easy to use
+          for everyone.
         </motion.p>
       </div>
     </motion.div>
