@@ -33,13 +33,15 @@ function About() {
             <div className="">
               {/* <div className="md:flex space-y-5 gap-5 md:px-12"></div> */}
               <p className="tracking-wide text-slate-400 px-2">
-                I'm <strong>Samuel Abolade (Techie Sam)</strong>, a Full-Stack Developer. I help individuals, startups, and
-                businesses build reliable digital tools that solve real problems and
-                deliver real value. <br /> <br />
-                Beyond writing code, I focus on improving products through user
-                feedback. I believe the best products grow by listening to
-                users, understanding their needs, and making thoughtful
-                improvements every step of the way.
+                I’m <strong>Samuel Abolade</strong>, a Full-Stack Developer. I
+                help businesses build reliable digital tools that make their
+                work easier, attract more customers, and increase revenue.
+                <br />
+                <br />I go beyond just writing code, I focus on improving
+                products through user feedback, performance optimization, and
+                continuous iteration. I believe great products are built by
+                understanding users, solving the right problems, and refining
+                the experience over time.
               </p>
             </div>
             <div variants={variants} className="px-5 ">
@@ -55,7 +57,7 @@ function About() {
                 <li>TailwindCSS</li>
                 <li>Node.js</li>
                 <li>Express</li>
-                <li>WordPress</li>
+                <li>WordPress Development</li>
               </ul>
             </div>
           </div>

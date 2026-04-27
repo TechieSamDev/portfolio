@@ -73,9 +73,16 @@ export const PROJECTS = [
     liveLink: "https://carbnb-prod.vercel.app",
     stacks: ["Next.js", "TailwindCSS", "Node.js"],
     description:
-      "CarBnB is a car rental platform designed to make booking and managing vehicles simple for both customers and business owners. Customers can browse available cars, view pricing and availability, and make reservations online, either as soft reservations or confirmed bookings. Business owners can easily update car details, track reservations, and manage orders, reducing double bookings and improving customer satisfaction.",
+      "CarBnB is a car rental booking platform built to eliminate manual reservation workflows and improve booking reliability for rental businesses. It enables customers to browse vehicles, check real-time availability, and complete reservations online, while business owners manage bookings, payments, and inventory from a centralized dashboard. By replacing WhatsApp-based booking systems, CarBnB reduces double bookings, improves operational efficiency, and delivers a faster, more reliable customer experience.",
   },
-
+  {
+    name: "Heal Me - Charity Platform",
+    image: "/assets/heal-me-cover.webp",
+    stacks: ["Next.js", "TailwindCSS", "TypeScript", "Node.js"],
+    liveLink: "https://lovefoundationafrica.org",
+    description:
+      "L.O.V.E Foundation is a donation platform built for a non-profit organization to help people easily support charitable causes online. It allows users to donate in a simple and secure way, while the organization can manage campaigns, track donations, and monitor impact from one place. The platform was designed to make giving faster and easier, reduce donation drop-offs, and improve the overall experience for both donors and administrators.",
+  },
   {
     name: "Throst - Expense Splitting App",
     image: "/assets/throst-cover.webp",
@@ -91,14 +98,5 @@ export const PROJECTS = [
     liveLink: "#",
     description:
       'Moar Market is a DeFi interface designed to make lending and borrowing on the Aptos blockchain intuitive for all users. Recognizing that technical jargon often scares away beginners, I built a "Dual-Mode" experience. Users can toggle between "Earn" (a simplified, bank-like view for passive income) and "Boost" (an advanced view for leverage and trading strategies).',
-  },
-
-  {
-    name: "Heal Me - Charity Platform",
-    image: "/assets/heal-me-cover.webp",
-    stacks: ["Next.js", "TailwindCSS", "TypeScript", "Node.js"],
-    liveLink: "https://lovefoundationafrica.org",
-    description:
-      "Heal Me is a platform designed to support vulnerable groups such as orphaned children, hospital patients, new mothers, and individuals with disabilities. It connects donors, volunteers, and people in need in one place, making it easy to give, receive support, or offer time and care.",
   },
 ];
