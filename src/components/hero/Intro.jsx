@@ -38,16 +38,15 @@ const Intro = () => {
           className="md:text-6xl sm:text-5xl text-4xl font-bold text-slate-200"
           variants={itemVariants}
         >
-          Samuel Abolade{" "}
-          <span className="text-accent text-sm font-medium">(Techie Sam)</span>
+          Samuel Abolade
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
           className="md:w-2/3 lg:w-1/2 pt-2 text-sm md:text-base text-slate-400"
         >
-          I build apps and websites that are secure, reliable, and easy to use
-          for everyone.
+          I build secure, reliable, and easy-to-use apps and websites that help
+          businesses improve their services and save time.
         </motion.p>
       </div>
     </motion.div>
