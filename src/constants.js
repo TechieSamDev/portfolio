@@ -65,15 +65,37 @@ export const TECHNOLOGIES = [
   "Express",
   "NodeJS",
 ];
-
 export const PROJECTS = [
   {
-    name: "CarBnB - Car Rental App",
-    image: "/assets/carbnb-cover.webp",
-    liveLink: "https://carbnb-prod.vercel.app",
-    stacks: ["Next.js", "TailwindCSS", "Node.js"],
+    name: "Fleetano - Car Rental Management Platform",
+    image: "/assets/fleetano-cover.webp",
+    stacks: [
+      "React.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+    ],
+    liveLink: "https://fleetano.vercel.app", // Update with your actual URL
     description:
-      "CarBnB is a car rental booking platform built to eliminate manual reservation workflows and improve booking reliability for rental businesses. It enables customers to browse vehicles, check real-time availability, and complete reservations online, while business owners manage bookings, payments, and inventory from a centralized dashboard. By replacing WhatsApp-based booking systems, CarBnB reduces double bookings, improves operational efficiency, and delivers a faster, more reliable customer experience.",
+      "Fleetano is a car rental management platform that helps rental businesses manage their operations from one dashboard. Customers can browse available vehicles, book a car, and pay online, while administrators can manage vehicles, bookings, customers, pricing, availability, and payments. It simplifies the rental process and makes booking faster and easier for everyone.",
+  },
+  {
+    name: "E-Commerce Platform",
+    image: "/assets/rbf-cover.webp",
+    stacks: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "MongoDB",
+      "Stripe",
+    ],
+    liveLink: "https://rahmabyfatima.vercel.app",
+    description:
+      "An e-commerce platform built to help businesses sell products online. Customers can browse products, search and filter items, add products to their cart, and complete purchases securely. Store owners can manage products, inventory, orders, customers, and payments from an easy-to-use admin dashboard.",
   },
   {
     name: "Heal Me - Charity Platform",
@@ -90,13 +112,5 @@ export const PROJECTS = [
     liveLink: "https://throst.vercel.app",
     description:
       "Throst is an application that makes it easy to split expenses with friends during group activities. Users can create groups for trips, hangouts, or shared events, invite participants, and add expenses with details of who paid and who shared in the cost. Throst then automatically calculates and shows how much each person owes based on the agreed split.",
-  },
-
-  {
-    name: "Moar Market – Adaptive DeFi Interface",
-    image: "/assets/moar-market-cover.gif",
-    liveLink: "#",
-    description:
-      'Moar Market is a DeFi interface designed to make lending and borrowing on the Aptos blockchain intuitive for all users. Recognizing that technical jargon often scares away beginners, I built a "Dual-Mode" experience. Users can toggle between "Earn" (a simplified, bank-like view for passive income) and "Boost" (an advanced view for leverage and trading strategies).',
   },
 ];
