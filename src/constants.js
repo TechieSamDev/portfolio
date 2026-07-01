@@ -4,7 +4,7 @@ const twitterAddress = "https://twitter.com/TechieSamDev";
 const githubAddress = "https://github.com/TechieSamDev";
 const instagramAddress = "https://www.instagram.com/techiesamdev";
 const whatsappLink =
-  "https://wa.me/+2349061918327?text=Hi Sam, I ";
+  "https://wa.me/+2347032640298?text=Hi Sam, I ";
 const telegramLink =
   "https://t.me/techiesamdev?start=Hi Sam, I";
 
