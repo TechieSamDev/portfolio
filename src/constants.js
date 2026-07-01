@@ -2,10 +2,11 @@
 const linkedinAddress = "https://www.linkedin.com/in/TechieSamDev";
 const twitterAddress = "https://twitter.com/TechieSamDev";
 const githubAddress = "https://github.com/TechieSamDev";
+const instagramAddress = "https://www.instagram.com/techiesamdev";
 const whatsappLink =
-  "https://wa.me/+2349061918327?text=Hey Techie Sam, I am reaching out ...";
+  "https://wa.me/+2349061918327?text=Hi Sam, I ";
 const telegramLink =
-  "https://t.me/TechieSam?start=Hey_Techie_Sam_I_wanted to  ...";
+  "https://t.me/techiesamdev?start=Hi Sam, I";
 
 const emailAddress = "mailto:techiesam.dev@gmail.com";
 
@@ -36,14 +37,20 @@ export const CONTACT_DETAILS = {
   },
   whatsapp: {
     platform: "WhatsApp",
-    address: "+2349061918327",
+    address: "+2347032640298",
     link: whatsappLink,
     icon: "",
   },
   telegram: {
     platform: "@Telegram",
-    address: "TechieSamDev",
+    address: "techiesamdev",
     link: telegramLink,
+    icon: "",
+  },
+  instagram: {
+    platform: "Instagram",
+    address: `@${instagramAddress.split("/").pop()}`,
+    link: instagramAddress,
     icon: "",
   },
 };

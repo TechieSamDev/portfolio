@@ -26,7 +26,7 @@ const Hero = () => {
         onClick={handleScrollDown}
         aria-label="Scroll down"
         style={{ animation: "heroChevronBounce 2s ease-in-out infinite" }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-slate-400 hover:text-accent transition-colors duration-300 cursor-pointer group"
+        className="absolute bottom-32 md:bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-slate-400 hover:text-accent transition-colors duration-300 cursor-pointer group"
       >
         <span className="text-xs tracking-widest uppercase group-hover:opacity-100 transition-opacity duration-300">
           Scroll
@@ -42,7 +42,7 @@ const Hero = () => {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <path d="M6 9l6 6 6-6" />
+          <path d="M4 9l6 6 6-6" />
         </svg>
       </button>
 
