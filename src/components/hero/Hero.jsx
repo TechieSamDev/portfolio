@@ -28,7 +28,7 @@ const Hero = () => {
         style={{ animation: "heroChevronBounce 2s ease-in-out infinite" }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-slate-400 hover:text-accent transition-colors duration-300 cursor-pointer group"
       >
-        <span className="text-xs tracking-widest uppercase opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+        <span className="text-xs tracking-widest uppercase group-hover:opacity-100 transition-opacity duration-300">
           Scroll
         </span>
         <svg
