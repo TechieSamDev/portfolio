@@ -90,7 +90,7 @@ export const PROJECTS = [
       "Fleetano is a car rental management platform that helps rental businesses manage their operations from one dashboard. Customers can browse available vehicles, book a car, and pay online, while administrators can manage vehicles, bookings, customers, pricing, availability, and payments. It simplifies the rental process and makes booking faster and easier for everyone.",
   },
   {
-    name: "E-Commerce Platform",
+    name: "Liora - E-Commerce",
     image: "/assets/rbf-cover.webp",
     stacks: [
       "Next.js",
@@ -100,9 +100,9 @@ export const PROJECTS = [
       "MongoDB",
       "Stripe",
     ],
-    liveLink: "https://rahmabyfatima.vercel.app",
+    liveLink: "https://shopliora.vercel.app",
     description:
-      "An e-commerce platform built to help businesses sell products online. Customers can browse products, search and filter items, add products to their cart, and complete purchases securely. Store owners can manage products, inventory, orders, customers, and payments from an easy-to-use admin dashboard.",
+      "Liora is An e-commerce platform built to help businesses sell products online. Customers can browse products, search and filter items, add products to their cart, and complete purchases securely. Store owners can manage products, inventory, orders, customers, and payments from an easy-to-use admin dashboard.",
   },
   {
     name: "Heal Me - Charity Platform",
