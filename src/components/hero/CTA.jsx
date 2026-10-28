@@ -6,7 +6,7 @@ const CTA = () => {
       <LinkButton
         variant="accent"
         rel="noopener noreferrer"
-        href="https://docs.google.com/document/d/1TBaH1CZiuCAHYqZQSysujHZe-B0rlB4iCr5ajIamRzM/export?format=pdf"
+        href="https://docs.google.com/document/d/1eYJbJTYt49OHU29dZ0zObyuxze1GNq34TNo2pzodnRE/export?format=pdf"
         className="border border-accent text-accent py-3 px-4 rounded-lg transition duration outline-none flex items-center  focus:bg-accent/50 focus:text-slate-100"
       >
         View Resume
